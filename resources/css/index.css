@@ -96,6 +96,10 @@ img {
         margin: auto 10% auto 10%;
     }
 
+    .mobileShow {
+        display: none;
+    }
+
     /* Page layout */
 
     .twoColumns {
@@ -296,6 +300,10 @@ img {
         margin: auto 10% auto 10%;
     }
 
+    .mobileShow {
+        display: none;
+    }
+
     /* Page layout */
 
     .twoColumns {
@@ -484,7 +492,7 @@ img {
 
     .title {
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.15rem;
         margin-bottom: 1.3rem;
     }
 
@@ -500,7 +508,7 @@ img {
     }
 
     /* Page layout */
-
+    
     .sidebarLineup {
         background-color: #f0f3f5;
         border-radius: 5px;
@@ -526,6 +534,7 @@ img {
     .showDescription {
         margin: 1.5rem auto 2rem auto;
         font-size: 1.7rem;
+        margin-bottom: 0.5rem;
     }
 
     .showDescription a {
@@ -662,7 +671,7 @@ img {
 
     .title {
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 0.85rem;
     }
 
     /* Page layout */
@@ -712,8 +721,8 @@ img {
     }
     
     .podcastApps img {
-        min-width: 5rem;
-        min-height: 5rem;
+        min-width: 4rem;
+        min-height: 4rem;
     }
     
     .podcastApps a {
