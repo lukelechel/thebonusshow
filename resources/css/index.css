@@ -93,7 +93,7 @@ img {
     }
 
     .archiveList {
-        margin: auto 10% auto 10%;
+        margin: auto 10%;
     }
 
     .mobileShow {
@@ -217,6 +217,11 @@ img {
         margin-bottom: 0.75rem;
         font-weight: 600;
     }
+
+    .subscription p {
+        font-size: 1.05rem;
+        font-weight: 600;
+    }
     
     .podcastApps {
         display: inline-block;
@@ -224,6 +229,7 @@ img {
         vertical-align: top;
         display: flex;
         justify-content: space-around;
+        margin-bottom: 1rem;
     }
     
     .podcastApps img {
@@ -297,7 +303,7 @@ img {
     }
 
     .archiveList {
-        margin: auto 10% auto 10%;
+        margin: auto 10%;
     }
 
     .mobileShow {
