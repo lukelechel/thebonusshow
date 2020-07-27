@@ -97,6 +97,7 @@ img {
 
     .title a {
         font-family: 'Gotham Bold', 'Jost', sans-serif;
+
         color: black;
         text-decoration: none;
         font-weight: 600;
@@ -288,6 +289,7 @@ img {
 
     .title a {
         font-family: 'Gotham Bold', 'Jost', sans-serif;
+
         color: black;
         text-decoration: none;
         font-weight: 600;
@@ -302,7 +304,7 @@ img {
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     /* Page layout */
@@ -475,6 +477,7 @@ img {
 
     .title a {
         font-family: 'Gotham Bold', 'Jost', sans-serif;
+
         color: black;
         text-decoration: none;
         font-weight: 600;
