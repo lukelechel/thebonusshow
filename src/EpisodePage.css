@@ -1,0 +1,73 @@
+#episodeTitle {
+    font-size: 1.8rem;
+    line-height: 120%;
+}
+
+#episodePublishDate {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+}
+
+#episodeDescription {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+#showNotesTitle {
+    font-size: 1.4rem;
+}
+
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    #episodeTitle {
+        margin-bottom: 0.5rem;
+    }
+
+    #episodeInfoContainer p {
+        font-size: 1.3rem;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 769px) and (max-width: 1299px) {
+
+    #episodeTitle {
+        margin-bottom: 0.5rem;
+    }
+
+    #episodeInfoContainer p {
+        font-size: 1.3rem;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    #episodeTitle {
+        margin: 1rem 0;
+    }
+
+    #episodeInfoContainer p {
+        font-size: 1.4rem;
+    }
+
+}

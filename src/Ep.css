@@ -1,0 +1,98 @@
+.episodeListing {
+    margin-bottom: 2rem;
+}
+
+.episodeListing h1 {
+    font-size: 1.8rem;
+    line-height: 120%;
+}
+
+.episodeListing h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.episodeListing p {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    #allEpsPageLabel {
+        font-size: 1.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .episodeListing {
+        border-left: 1px solid black;
+        padding: 0.5rem 0 1rem 2rem;
+    }
+
+    .episodeListing h1 {
+        width: 85%;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 769px) and (max-width: 1299px) {
+
+    #allEpsPageLabel {
+        font-size: 1.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .episodeListing {
+        border-left: 1px solid black;
+        padding: 0.5rem 0 1rem 1.25rem;
+    }
+
+    .episodeListing h1 {
+        width: 85%;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    #allEpsPageLabel {
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .episodeListing {
+        padding: 1rem 0 0.5rem 0;
+    }
+
+    .episodeListing h1 {
+        width: 100%;
+    }
+
+    .episodeListing h2 {
+        font-size: 1.3rem;
+    }
+
+    .episodeListing p {
+        font-size: 1.3rem;
+    }
+
+}

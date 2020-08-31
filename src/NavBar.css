@@ -1,0 +1,151 @@
+#navBarContainer {
+    background-color: #15294e;
+    padding: 1.5rem 3rem;
+    justify-content: space-between;
+}
+
+#siteTitle {
+    font-family: 'Gotham Bold', 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#podcastAppBar {
+    display: flex;
+    margin: 0.4rem 1rem 0 0;
+}
+
+#podcastAppBar li {
+    margin: auto 0.65rem;
+}
+
+#podcastAppBar img {
+    width: 2.3rem;
+}
+
+#navigationBar {
+    display: flex;
+}
+
+#navigationBar li {
+    margin: auto 0.8rem;
+    font-size: 1.4rem;
+}
+
+#navigationBar li a {
+    color: white;
+}
+
+
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    #navBarContainer {
+        display: flex;
+    }
+
+    #titleEmoji {
+        margin-right: 1rem;
+    }
+
+    #navBarRight {
+        display: flex;
+        margin: auto 0;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 769px) and (max-width: 1299px) {
+
+    #titleEmoji {
+        margin-right: 1rem;
+    }
+
+    #navBarRight {
+        display: flex;
+        margin: 1rem auto 0 auto;
+        justify-content: center;
+    }
+
+    #siteTitle {
+        text-align: center;
+    }
+
+    #podcastAppBar {
+        margin: auto 0 auto 0;
+    }
+
+    #podcastAppBar li {
+        justify-content: space-between;
+    }
+
+    #podcastAppBar img {
+        min-width: 2.5rem;
+    }
+
+    #navigationBar li {
+        justify-content: space-between;
+        font-weight: 700;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    #navBarContainer {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #titleEmoji {
+        display: none;
+    }
+
+    #navBarRight {
+        display: block;
+    }
+
+    #siteTitle {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    #podcastAppBar {
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+    #podcastAppBar li {
+        margin: 0 auto;
+    }
+
+    #podcastAppBar img {
+        min-width: 3rem;
+    }
+
+    #navigationBar li {
+        margin: 0 auto;
+        font-weight: 700;
+    }
+
+}

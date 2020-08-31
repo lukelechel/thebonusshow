@@ -1,0 +1,83 @@
+.leftRightContainer {
+    display: flex;
+}
+
+#recentEpsLabel {
+    margin-bottom: 1rem;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    .leftRightContainer {
+        margin: 2rem 3rem 2rem 2rem;
+    }
+
+    #showDescription {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #recentEpsLabel {
+        font-size: 1.9rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 769px) and (max-width: 1299px) {
+
+    .leftRightContainer {
+        margin: 2rem 2rem 2rem 0rem;
+    }
+
+    #showDescription {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+    #recentEpsLabel {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    .leftRightContainer {
+        flex-direction: column-reverse;
+        margin: 0 1rem;
+    }
+
+    #showDescription {
+        font-size: 2rem;
+        margin: 3rem 0 4rem 0;
+        text-align: center;
+    }
+
+    #recentEpsLabel {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+}
