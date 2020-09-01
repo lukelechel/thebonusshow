@@ -1,3 +1,7 @@
+#episodeInfo {
+    margin: 0 0 1.5rem 0;
+}
+
 #episodeTitle {
     font-size: 1.8rem;
     line-height: 120%;
@@ -10,7 +14,11 @@
 
 #episodeDescription {
     font-size: 1.3rem;
-    margin-bottom: 1.5rem;
+}
+
+#episodeStreamLink {
+    margin: 0.75rem auto 1rem auto;
+    font-weight: 700;
 }
 
 #showNotesTitle {
@@ -63,11 +71,19 @@
 @media only screen and (max-width: 768px) {
 
     #episodeTitle {
-        margin: 1rem 0;
+        margin: 1.5rem 0 0.75rem 0;
     }
 
     #episodeInfoContainer p {
         font-size: 1.4rem;
+    }
+
+    #episodeInfo {
+        margin: 0 0 2rem 0;
+    }
+
+    #episodeStreamLink {
+        text-align: center;
     }
 
 }

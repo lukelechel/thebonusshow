@@ -48,10 +48,17 @@ class EpisodePage extends React.Component {
         let selectedEpisode = episodeData.filter(episodeRaw => episodeRaw.id === episodeNumber)[0]
 
         return (
-            <div>
+            <div id="episodeInfo">
                 <h1 id="episodeTitle">{selectedEpisode.id}: {selectedEpisode.title}</h1>
                 <h2 id="episodePublishDate">{selectedEpisode.publishDate}</h2>
                 <p id="episodeDescription">{selectedEpisode.description}</p>
+                <p id="episodeStreamLink">
+                    <a
+                        href={selectedEpisode.listenLink}
+                        alt={`Listen to ${selectedEpisode.title}`}>
+                        Stream this episode
+                    </a>
+                </p>
                 <h1 id="showNotesTitle">Show Notes</h1>
                 {
                     this.getShowNotes()
