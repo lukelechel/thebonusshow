@@ -2,11 +2,11 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import './App.css'
 
-import Home from './Home'
-import Ep from './Ep'
-import Error from './Error'
+import Home from '../Home/Home'
+import Ep from '../Ep/Ep'
+import Error from '../Error/Error'
 
-import EpisodePage from './EpisodePage'
+import EpisodePage from '../EpisodePage/EpisodePage'
 
 class App extends React.Component {
   render() {

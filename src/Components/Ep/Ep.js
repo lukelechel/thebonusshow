@@ -1,9 +1,9 @@
 import React from 'react'
 import './Ep.css'
 
-import NavBar from './NavBar'
-import LeftCoverArt from './LeftCoverArt'
-import episodeData from './EpisodeData.json'
+import NavBar from '../NavBar/NavBar'
+import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
+import episodeData from '../../EpisodeData.json'
 import { v4 as uuidv4 } from 'uuid';
 
 const getUniqueKey = () => {
@@ -27,6 +27,13 @@ class Ep extends React.Component {
                                         <a href={`/ep/${epInfo.id}`}><h1>{epInfo.id}: {epInfo.title}</h1></a>
                                         <h2>{epInfo.publishDate}</h2>
                                         <p>{epInfo.description}</p>
+                                        <p id="episodeStreamLink">
+                                            <a
+                                                href={epInfo.listenLink}
+                                                alt={`Listen to ${epInfo.title}`}>
+                                                Stream this episode
+                                            </a>
+                                        </p>
                                     </div>
                                 )
                             })

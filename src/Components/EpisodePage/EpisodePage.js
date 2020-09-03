@@ -1,9 +1,9 @@
 import React from 'react'
 import './EpisodePage.css'
 
-import NavBar from './NavBar'
-import LeftCoverArt from './LeftCoverArt'
-import episodeData from './EpisodeData.json'
+import NavBar from '../NavBar/NavBar'
+import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
+import episodeData from '../../EpisodeData.json'
 
 import { v4 as uuidv4 } from 'uuid';
 

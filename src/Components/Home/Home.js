@@ -3,9 +3,9 @@ import './Home.css'
 
 import { Link } from 'react-router-dom'
 
-import NavBar from './NavBar'
-import LeftCoverArt from './LeftCoverArt'
-import episodeData from './EpisodeData.json'
+import NavBar from '../NavBar/NavBar'
+import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
+import episodeData from '../../EpisodeData.json'
 
 import { v4 as uuidv4 } from 'uuid';
 
@@ -33,6 +33,13 @@ class Home extends React.Component {
                                                 <h1><Link to={`/ep/${epInfo.id}`}>{epInfo.id}: {epInfo.title}</Link></h1>
                                                 <h2>{epInfo.publishDate}</h2>
                                                 <p>{epInfo.description}</p>
+                                                <p id="episodeStreamLink">
+                                                    <a
+                                                        href={epInfo.listenLink}
+                                                        alt={`Listen to ${epInfo.title}`}>
+                                                        Stream this episode
+                                                    </a>
+                                                </p>
                                             </div>
                                         )
                                     } else {
