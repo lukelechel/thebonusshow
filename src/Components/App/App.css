@@ -28,6 +28,7 @@ a {
 a:hover {
     color: #65b0f0;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 ul {
