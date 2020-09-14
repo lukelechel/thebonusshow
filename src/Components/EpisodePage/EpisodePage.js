@@ -4,6 +4,7 @@ import './EpisodePage.css'
 import NavBar from '../NavBar/NavBar'
 import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
 import episodeData from '../../EpisodeData.json'
+import ActionButton from '../ActionButton/ActionButton'
 
 import { v4 as uuidv4 } from 'uuid';
 
@@ -52,13 +53,7 @@ class EpisodePage extends React.Component {
                 <h1 id="episodeTitle">{selectedEpisode.id}: {selectedEpisode.title}</h1>
                 <h2 id="episodePublishDate">{selectedEpisode.publishDate}</h2>
                 <p id="episodeDescription">{selectedEpisode.description}</p>
-                <p id="episodeStreamLink">
-                    <a
-                        href={selectedEpisode.listenLink}
-                        alt={`Listen to ${selectedEpisode.title}`}>
-                        Stream this episode
-                    </a>
-                </p>
+                <ActionButton linkDestination={selectedEpisode.listenLink} linkAlt={`Listen to ${selectedEpisode.title}`} msg="Stream this episode" />
                 <h1 id="showNotesTitle">Show Notes</h1>
                 {
                     this.getShowNotes()

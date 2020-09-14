@@ -8,17 +8,12 @@
 }
 
 #episodePublishDate {
-    font-size: 1.3rem;
-    margin-bottom: 0.2rem;
+    font-size: 1.25rem;
+    margin: 0.25rem 0;
 }
 
 #episodeDescription {
-    font-size: 1.3rem;
-}
-
-#episodeStreamLink {
-    margin: 0.75rem auto 1rem auto;
-    font-weight: 700;
+    font-size: 1.35rem;
 }
 
 #showNotesTitle {

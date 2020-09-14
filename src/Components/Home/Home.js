@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import NavBar from '../NavBar/NavBar'
 import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
 import episodeData from '../../EpisodeData.json'
+import ActionButton from '../ActionButton/ActionButton'
 
 import { v4 as uuidv4 } from 'uuid';
 
@@ -21,7 +22,7 @@ class Home extends React.Component {
                 <div className="leftRightContainer">
                     <LeftCoverArt />
                     <div>
-                        <h1 id="showDescription">The Bonus Show is a new podcast from <a href="https://lukelechel.com" rel="noopener noreferrer">Luke Lechel</a> about minimalism, technology, and fitness.</h1>
+                        <h1 id="showDescription">A podcast from <a href="https://lukelechel.com" alt="Luke Lechel" rel="noopener noreferrer">Luke Lechel</a> about technology, productivity, &amp; fitness.</h1>
                         <div id="recentEpisodesSection">
                             <h1 id="recentEpsLabel">Recent episodes:</h1>
                             {
@@ -33,13 +34,7 @@ class Home extends React.Component {
                                                 <h1><Link to={`/ep/${epInfo.id}`}>{epInfo.id}: {epInfo.title}</Link></h1>
                                                 <h2>{epInfo.publishDate}</h2>
                                                 <p>{epInfo.description}</p>
-                                                <p id="episodeStreamLink">
-                                                    <a
-                                                        href={epInfo.listenLink}
-                                                        alt={`Listen to ${epInfo.title}`}>
-                                                        Stream this episode
-                                                    </a>
-                                                </p>
+                                                <ActionButton linkDestination={epInfo.listenLink} linkAlt={`Listen to ${epInfo.title}`} msg="Stream this episode" />
                                             </div>
                                         )
                                     } else {

@@ -8,13 +8,12 @@
 }
 
 .episodeListing h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.2rem;
+    font-size: 1.25rem;
+    margin: 0.25rem 0;
 }
 
 .episodeListing p {
-    font-size: 1.2rem;
-    margin-bottom: 0.2rem;
+    font-size: 1.35rem;
 }
 
 /* ---------------------- */
