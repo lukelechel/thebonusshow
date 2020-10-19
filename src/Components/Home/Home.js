@@ -22,7 +22,7 @@ class Home extends React.Component {
                 <div className="leftRightContainer">
                     <LeftCoverArt />
                     <div>
-                        <h1 id="showDescription">A podcast from <a href="https://lukelechel.com" alt="Luke Lechel" rel="noopener noreferrer">Luke Lechel</a> about technology, productivity, &amp; fitness.</h1>
+                        <h1 id="showDescription">A podcast from <a href="https://lukelechel.com" alt="Luke Lechel" rel="noopener noreferrer">Luke Lechel</a> about technology, productivity, and fitness.</h1>
                         <div id="recentEpisodesSection">
                             <h1 id="recentEpsLabel">Recent episodes:</h1>
                             {
