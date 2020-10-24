@@ -79,10 +79,7 @@ const navigationLibrary = [
 const NavigationLinks = (title, link, alt) => {
     return (
         <li key={getUniqueKey()}>
-            <a
-                href={link}
-                alt={alt}
-                >
+            <a href={link} alt={alt}>
                 {title}
             </a>
         </li>

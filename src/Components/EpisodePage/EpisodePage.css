@@ -20,6 +20,11 @@
     font-size: 1.4rem;
 }
 
+#showNotes-container p {
+    line-height: 200%;
+    letter-spacing: 0.025rem;
+}
+
 
 /* ---------------------- */
 /* ---------------------- */

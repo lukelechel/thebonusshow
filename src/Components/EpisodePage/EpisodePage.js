@@ -55,9 +55,11 @@ class EpisodePage extends React.Component {
                 <p id="episodeDescription">{selectedEpisode.description}</p>
                 <ActionButton linkDestination={selectedEpisode.listenLink} linkAlt={`Listen to ${selectedEpisode.title}`} msg="Stream this episode" />
                 <h1 id="showNotesTitle">Show Notes</h1>
-                {
-                    this.getShowNotes()
-                }
+                <div id="showNotes-container">
+                    {
+                        this.getShowNotes()
+                    }
+                </div>
             </div>
         )
     }
