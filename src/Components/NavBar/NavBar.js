@@ -1,15 +1,26 @@
 import React from 'react'
 import './NavBar.css'
 
-import { v4 as uuidv4 } from 'uuid';
-
-const getUniqueKey = () => {
-    return uuidv4()
-}
-
 const emoji = require("emoji-dictionary")
+const awsResourceUriPrefix = "https://thebonusshow-resources.s3.us-east-2.amazonaws.com/"
 
-const getPodcastAppIconUrl = (lowerDirectoryToggle, iconName) => `${lowerDirectoryToggle ? '.' : ''}./resources/images/${iconName}.svg`
+const navigationLibrary = [
+    {
+        title: "Episodes",
+        link: "/Ep",
+        alt: "Episodes"
+    },
+    {
+        title: "Instagram",
+        link: "https://www.instagram.com/thebonusshow",
+        alt: "The Bonus Show on Instagram"
+    },
+    {
+        title: "YouTube",
+        link: "https://www.youtube.com/channel/UCSVYJ-ZKxZx2Gv-I69wYcWg",
+        alt: "The Bonus Show on YouTube"
+    }
+]
 
 const iconLibrary = [
     {
@@ -39,53 +50,6 @@ const iconLibrary = [
     }
 ]
 
-const PodcastAppIcon = (href, platform, lowerDirectoryToggle, iconName) => {
-    const title = `The Bonus Show on ${platform}`
-    return (
-        <li key={getUniqueKey()}>
-            <a
-                href={href}
-                alt={title}
-                title={title}
-                rel="noopener noreferrer"
-                >
-                <img
-                    src={getPodcastAppIconUrl(lowerDirectoryToggle, iconName)}
-                    alt={`${platform} logo`}
-                    ></img>
-            </a>
-        </li>
-    )
-}
-
-const navigationLibrary = [
-    {
-        title: "Episodes",
-        link: "../Ep",
-        alt: "Episodes"
-    },
-    {
-        title: "Instagram",
-        link: "https://www.instagram.com/thebonusshow",
-        alt: "The Bonus Show on Instagram"
-    },
-    {
-        title: "YouTube",
-        link: "https://www.youtube.com/channel/UCSVYJ-ZKxZx2Gv-I69wYcWg",
-        alt: "The Bonus Show on YouTube"
-    }
-]
-
-const NavigationLinks = (title, link, alt) => {
-    return (
-        <li key={getUniqueKey()}>
-            <a href={link} alt={alt}>
-                {title}
-            </a>
-        </li>
-    )
-}
-
 class NavBar extends React.Component {
     render() {
         return (
@@ -99,12 +63,34 @@ class NavBar extends React.Component {
                 <div id="navBarRight">
                     <ul id="podcastAppBar">
                         {
-                            iconLibrary.map(x => PodcastAppIcon(x.link, x.platform, true, x.iconFileName))
+                            iconLibrary.map(x => {
+                                return (
+                                    <li key={x.platform}>
+                                        <a
+                                            href={x.link}
+                                            alt={`The Bonus Show on ${x.platform}`}
+                                            title={`The Bonus Show on ${x.platform}`}
+                                            rel="noopener noreferrer">
+                                            <img
+                                                src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
+                                                alt={`${x.platform} logo`} />
+                                        </a>
+                                    </li>
+                                )
+                            })
                         }
                     </ul>
                     <ul id="navigationBar">
                         {
-                            navigationLibrary.map(x => NavigationLinks(x.title, x.link, x.alt))
+                            navigationLibrary.map(x => {
+                                return (
+                                    <li key={x.title}>
+                                        <a href={x.link} alt={x.alt}>
+                                            {x.title}
+                                        </a>
+                                    </li>
+                                )
+                            })
                         }
                     </ul>
                 </div>
