@@ -6,7 +6,7 @@ import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
 import episodeData from '../../EpisodeData.json'
 import ActionButton from '../ActionButton/ActionButton'
 
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid'
 
 const getUniqueKey = () => {
     return uuidv4()

@@ -50,53 +50,49 @@ const iconLibrary = [
     }
 ]
 
-class NavBar extends React.Component {
-    render() {
-        return (
-            <div id="navBarContainer">
-                <a
-                    href="/"
-                    alt="Home"
-                    rel="noopener noreferrer">
-                        <h1 id="siteTitle"><span id="titleEmoji" role="img" aria-label={emoji.getName(this.innerHTML)}>⚡️</span>The Bonus Show</h1>
-                </a>
-                <div id="navBarRight">
-                    <ul id="podcastAppBar">
-                        {
-                            iconLibrary.map(x => {
-                                return (
-                                    <li key={x.platform}>
-                                        <a
-                                            href={x.link}
-                                            alt={`The Bonus Show on ${x.platform}`}
-                                            title={`The Bonus Show on ${x.platform}`}
-                                            rel="noopener noreferrer">
-                                            <img
-                                                src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
-                                                alt={`${x.platform} logo`} />
-                                        </a>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                    <ul id="navigationBar">
-                        {
-                            navigationLibrary.map(x => {
-                                return (
-                                    <li key={x.title}>
-                                        <a href={x.link} alt={x.alt}>
-                                            {x.title}
-                                        </a>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                </div>
-            </div>
-        )
-    }
-}
+const NavBar = () => (<div id="navBarContainer">
+    <a
+        href="/"
+        alt="Home"
+        rel="noopener noreferrer">
+            <h1 id="siteTitle"><span id="titleEmoji" role="img" aria-label={emoji.getName(this.innerHTML)}>⚡️</span>The Bonus Show</h1>
+    </a>
+
+    <div id="navBarRight">
+        <ul id="podcastAppBar">
+            {
+                iconLibrary.map(x => {
+                    return (
+                        <li key={x.platform}>
+                            <a
+                                href={x.link}
+                                alt={`The Bonus Show on ${x.platform}`}
+                                title={`The Bonus Show on ${x.platform}`}
+                                rel="noopener noreferrer">
+                                <img
+                                    src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
+                                    alt={`${x.platform} logo`} />
+                            </a>
+                        </li>
+                    )
+                })
+            }
+        </ul>
+        
+        <ul id="navigationBar">
+            {
+                navigationLibrary.map(x => {
+                    return (
+                        <li key={x.title}>
+                            <a href={x.link} alt={x.alt}>
+                                {x.title}
+                            </a>
+                        </li>
+                    )
+                })
+            }
+        </ul>
+    </div>
+</div>)
 
 export default NavBar
