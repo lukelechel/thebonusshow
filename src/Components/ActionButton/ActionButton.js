@@ -1,19 +1,10 @@
 import React from 'react'
 import './ActionButton.css'
 
-class ActionButton extends React.Component {
-    render() {
-        return (
-            <div className="actionButtonContainer">
-                <a
-                    href={this.props.linkDestination}
-                    alt={this.props.linkAlt}
-                    className="actionButton" >
-                    {this.props.msg}
-                </a>
-            </div>
-        )
-    }
-}
+const ActionButton = ({link, alt, message}) => (<div className="actionButtonContainer">
+    <a href={link} alt={alt} className="actionButton">
+        {message}
+    </a>
+</div>)
 
 export default ActionButton

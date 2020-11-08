@@ -6,77 +6,47 @@ import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
 import episodeData from '../../EpisodeData.json'
 import ActionButton from '../ActionButton/ActionButton'
 
+import { useParams } from 'react-router-dom'
+
 import { v4 as uuidv4 } from 'uuid'
 
-const getUniqueKey = () => {
-    return uuidv4()
+const EpisodePage = () => {
+    const { id } = useParams()
+    const episodeInfo = episodeData.find(x => x.id === id)
+    return (<div>
+        <NavBar />
+        <div className="leftRightContainer">
+            <LeftCoverArt />
+            <div id="episodeInfoContainer">
+                <EpisodeListing episodeInfo={episodeInfo} />
+            </div>
+        </div>
+    </div>)
 }
 
-class EpisodePage extends React.Component {
+const EpisodeListing = ({episodeInfo}) => (<div id="episodeInfo">
+    <h1 id="episodeTitle">{episodeInfo.id}: {episodeInfo.title}</h1>
+    <h2 id="episodePublishDate">{episodeInfo.publishDate}</h2>
+    <p id="episodeDescription">{episodeInfo.description}</p>
+    <ActionButton link={episodeInfo.listenLink} alt={`Listen to ${episodeInfo.title}`} message="Stream this episode" />
 
-    generateHtmlString(showNote) {
-        if (showNote.isLink) {
-            return (
-                console.log(showNote)
-            )
-        } else {
-            return (
-                console.log(showNote)
-            )
+    <h1 id="showNotesTitle">Show Notes</h1>
+    <div id="showNotes-container">
+        {
+            episodeInfo.showNotes.map(x => <ShowNoteItem showNoteItem={x} key={getUniqueKey()} />)
         }
+    </div>
+</div>)
+
+const ShowNoteItem = ({showNoteItem}) => (<p>
+    {
+        showNoteItem.isLink ?
+            (<a href={showNoteItem.link} alt={showNoteItem.alt}>{showNoteItem.title}</a>)
+            :
+            (showNoteItem.straightUpText)
     }
+</p>)
 
-    getShowNotes() {
-        const { match: { params } } = this.props
-        const episodeNumber = params.id
-        const selectedEpisode = episodeData.find(episodeRaw => episodeRaw.id === episodeNumber)
-        const selectedEpShowNotesArray = selectedEpisode.showNotes
-
-        return selectedEpShowNotesArray.map(showNote => {
-            if (showNote.isLink === null) {
-                return (<p key={getUniqueKey()}>{null}</p>)
-            } else if (showNote.isLink) {
-                return (<p key={getUniqueKey()}><a href={showNote.link} alt={showNote.alt}>{showNote.title}</a></p>)
-            } else {
-                return (<p key={getUniqueKey()}>{showNote.straightUpText}</p>)
-            }
-        })
-    }
-
-    episodeInfoContent() {
-        const { match: { params } } = this.props
-        const episodeNumber = params.id
-        let selectedEpisode = episodeData.filter(episodeRaw => episodeRaw.id === episodeNumber)[0]
-
-        return (
-            <div id="episodeInfo">
-                <h1 id="episodeTitle">{selectedEpisode.id}: {selectedEpisode.title}</h1>
-                <h2 id="episodePublishDate">{selectedEpisode.publishDate}</h2>
-                <p id="episodeDescription">{selectedEpisode.description}</p>
-                <ActionButton linkDestination={selectedEpisode.listenLink} linkAlt={`Listen to ${selectedEpisode.title}`} msg="Stream this episode" />
-                <h1 id="showNotesTitle">Show Notes</h1>
-                <div id="showNotes-container">
-                    {
-                        this.getShowNotes()
-                    }
-                </div>
-            </div>
-        )
-    }
-
-    render() {
-        return (
-            <div>
-                <NavBar />
-                <div className="leftRightContainer">
-                    <LeftCoverArt />
-                    <div id="episodeInfoContainer">
-                        {this.episodeInfoContent()}
-                    </div>
-                </div>
-            </div>
-        )
-    }
-}
+const getUniqueKey = () => uuidv4()
 
 export default EpisodePage

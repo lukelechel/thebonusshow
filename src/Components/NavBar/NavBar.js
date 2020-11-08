@@ -61,35 +61,31 @@ const NavBar = () => (<div id="navBarContainer">
     <div id="navBarRight">
         <ul id="podcastAppBar">
             {
-                iconLibrary.map(x => {
-                    return (
-                        <li key={x.platform}>
-                            <a
-                                href={x.link}
-                                alt={`The Bonus Show on ${x.platform}`}
-                                title={`The Bonus Show on ${x.platform}`}
-                                rel="noopener noreferrer">
-                                <img
-                                    src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
-                                    alt={`${x.platform} logo`} />
-                            </a>
-                        </li>
-                    )
-                })
+                iconLibrary.map(x => (
+                    <li key={x.platform}>
+                        <a
+                            href={x.link}
+                            alt={`The Bonus Show on ${x.platform}`}
+                            title={`The Bonus Show on ${x.platform}`}
+                            rel="noopener noreferrer">
+                            <img
+                                src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
+                                alt={`${x.platform} logo`} />
+                        </a>
+                    </li>
+                ))
             }
         </ul>
         
         <ul id="navigationBar">
             {
-                navigationLibrary.map(x => {
-                    return (
-                        <li key={x.title}>
-                            <a href={x.link} alt={x.alt}>
-                                {x.title}
-                            </a>
-                        </li>
-                    )
-                })
+                navigationLibrary.map(x => (
+                    <li key={x.title}>
+                        <a href={x.link} alt={x.alt}>
+                            {x.title}
+                        </a>
+                    </li>
+                ))
             }
         </ul>
     </div>

@@ -23,7 +23,7 @@
         "listenLink": "https://fireside.fm/s/ATskTz4J+1xj6omgW",
         "showNotes": [
             {
-                "isLink": null,
+                "isLink": false,
                 "title": "",
                 "link": "",
                 "alt": "",

@@ -4,27 +4,18 @@ import './App.css'
 
 import Home from '../Home/Home'
 import Ep from '../Ep/Ep'
-import Error from '../Error/Error'
-
 import EpisodePage from '../EpisodePage/EpisodePage'
+import { Error } from '../Error/Error'
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <BrowserRouter>
-          <div>
-            <Switch>
-              <Route path="/" component={Home} exact/>
-              <Route path="/ep" component={Ep} exact />
-              <Route path="/ep/:id" component={EpisodePage} />
-              <Route component={Error}/>
-            </Switch>
-          </div>
-        </BrowserRouter>
-      </div>
-    )
-  }
-}
+const App = () => (<BrowserRouter>
+    <div>
+        <Switch>
+            <Route path="/" component={Home} exact/>
+            <Route path="/ep" component={Ep} exact />
+            <Route path="/ep/:id" component={EpisodePage} />
+            <Route component={Error}/>
+        </Switch>
+    </div>
+</BrowserRouter>)
 
 export default App
