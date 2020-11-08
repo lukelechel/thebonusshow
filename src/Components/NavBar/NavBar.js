@@ -55,7 +55,7 @@ const NavBar = () => (<div id="navBarContainer">
         href="/"
         alt="Home"
         rel="noopener noreferrer">
-            <h1 id="siteTitle"><span id="titleEmoji" role="img" aria-label={emoji.getName(this.innerHTML)}>⚡️</span>The Bonus Show</h1>
+            <h1 id="siteTitle"><span id="titleEmoji" role="img" aria-label={emoji.getName('⚡️')}>⚡️</span>The Bonus Show</h1>
     </a>
 
     <div id="navBarRight">
