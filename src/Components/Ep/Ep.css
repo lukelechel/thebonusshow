@@ -1,17 +1,14 @@
 .episodeListing {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
-
 .episodeListing h1 {
     font-size: 1.8rem;
     line-height: 120%;
 }
-
 .episodeListing h2 {
     font-size: 1.25rem;
     margin: 0.25rem 0;
 }
-
 .episodeListing p {
     font-size: 1.35rem;
 }
@@ -25,15 +22,13 @@
 @media only screen and (min-width: 1300px) {
 
     #allEpsPageLabel {
-        font-size: 1.9rem;
-        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        margin: 1rem;
     }
 
     .episodeListing {
-        border-left: 1px solid black;
-        padding: 0.5rem 0 0.2rem 2rem;
+        margin-left: 1rem;
     }
-
     .episodeListing h1 {
         width: 85%;
     }
@@ -49,15 +44,13 @@
 @media only screen and (min-width: 769px) and (max-width: 1299px) {
 
     #allEpsPageLabel {
-        font-size: 1.9rem;
-        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        margin: 1rem;
     }
 
     .episodeListing {
-        border-left: 1px solid black;
-        padding: 0.5rem 0 0.05rem 1.25rem;
+        margin-left: 1rem;
     }
-
     .episodeListing h1 {
         width: 85%;
     }
@@ -73,23 +66,17 @@
 @media only screen and (max-width: 768px) {
 
     #allEpsPageLabel {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
         text-align: center;
         margin: 2rem 0 1rem 0;
     }
 
     .episodeListing {
-        padding: 1rem 0 0.5rem 0;
+        text-align: center;
     }
-
-    .episodeListing h1 {
-        width: 100%;
-    }
-
     .episodeListing h2 {
         font-size: 1.3rem;
     }
-
     .episodeListing p {
         font-size: 1.3rem;
     }

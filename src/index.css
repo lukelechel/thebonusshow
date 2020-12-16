@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @font-face {
     font-family: 'Gotham Bold';
     src: url('../src/Gotham_Bold.otf');
@@ -6,7 +6,7 @@
 }
 
 * {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

@@ -2,7 +2,6 @@
     width: 100%;
     border-radius: 10px;
     box-shadow: 0.25rem 0.2rem 0.5rem #b8b8b8;
-    margin: 0 auto;
 }
 
 
@@ -20,7 +19,8 @@
         max-width: 32rem;
         min-height: 32rem;
         max-height: 32rem;
-        margin-right: 2rem;
+        margin: 1.5rem 2rem 1.5rem 2rem;
+        float: right;
     }
 
 }
@@ -38,7 +38,8 @@
         max-width: 22rem;
         min-height: 22rem;
         max-height: 22rem;
-        margin: 0 2rem 0 1rem;
+        margin: 1rem 2rem 1rem 1rem;
+        float: right;
     }
 
 }
@@ -52,9 +53,9 @@
 @media only screen and (max-width: 768px) {
 
     #cover-art {
-        min-width: 0;
-        max-width: 100%;
-        margin: 0 auto;
+        max-width: 95%;
+        display: flex;
+        margin: 1rem auto;
     }
 
 }
