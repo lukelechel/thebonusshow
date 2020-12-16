@@ -44,7 +44,7 @@ const iconLibrary = [
         iconFileName: "pocket-casts"
     },
     {
-        link: "https://feeds.fireside.fm/thebonusshow/rss",
+        link: "https://thebonusshow-resources.s3.us-east-2.amazonaws.com/feed.xml",
         platform: "RSS",
         iconFileName: "rss"
     }

@@ -52,7 +52,7 @@
 
     #navBarContainer {
         display: flex;
-        padding: 1.5rem 3rem;
+        padding: 1.5rem 1rem;
     }
 
     #titleEmoji {
