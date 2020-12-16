@@ -1,5 +1,5 @@
 import React from 'react'
-import './NavBar.css'
+import './Nav.css'
 
 const emoji = require("emoji-dictionary")
 const awsResourceUriPrefix = "https://thebonusshow-resources.s3.us-east-2.amazonaws.com/"
@@ -50,10 +50,9 @@ const iconLibrary = [
     }
 ]
 
-const NavBar = () => (<div id="navBarContainer">
+const Nav = () => (<div id="navBarContainer">
     <a
         href="/"
-        alt="Home"
         rel="noopener noreferrer">
             <h1 id="siteTitle"><span id="titleEmoji" role="img" aria-label={emoji.getName('⚡️')}>⚡️</span>The Bonus Show</h1>
     </a>
@@ -65,7 +64,6 @@ const NavBar = () => (<div id="navBarContainer">
                     <li key={x.platform}>
                         <a
                             href={x.link}
-                            alt={`The Bonus Show on ${x.platform}`}
                             title={`The Bonus Show on ${x.platform}`}
                             rel="noopener noreferrer">
                             <img
@@ -81,7 +79,7 @@ const NavBar = () => (<div id="navBarContainer">
             {
                 navigationLibrary.map(x => (
                     <li key={x.title}>
-                        <a href={x.link} alt={x.alt}>
+                        <a href={x.link}>
                             {x.title}
                         </a>
                     </li>
@@ -91,4 +89,4 @@ const NavBar = () => (<div id="navBarContainer">
     </div>
 </div>)
 
-export default NavBar
+export default Nav

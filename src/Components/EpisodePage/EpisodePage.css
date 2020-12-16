@@ -1,28 +1,25 @@
 #episodeInfo {
-    margin: 0 0 1.5rem 0;
+    margin: 1rem 2rem 0 1rem;
 }
-
 #episodeTitle {
     font-size: 1.8rem;
     line-height: 120%;
 }
-
 #episodePublishDate {
     font-size: 1.25rem;
     margin: 0.25rem 0;
 }
-
 #episodeDescription {
     font-size: 1.35rem;
 }
 
 #showNotesTitle {
     font-size: 1.4rem;
+    margin: 3rem 0 0.5rem 0;
 }
-
-#showNotes-container p {
+#showNotes-container {
+    font-size: 1.1rem;
     line-height: 200%;
-    letter-spacing: 0.025rem;
 }
 
 
@@ -36,10 +33,6 @@
 
     #episodeTitle {
         margin-bottom: 0.5rem;
-    }
-
-    #episodeInfoContainer p {
-        font-size: 1.3rem;
     }
 
 }
@@ -56,10 +49,6 @@
         margin-bottom: 0.5rem;
     }
 
-    #episodeInfoContainer p {
-        font-size: 1.3rem;
-    }
-
 }
 
 /* ---------------------- */
@@ -70,20 +59,17 @@
 
 @media only screen and (max-width: 768px) {
 
+    #episodeInfo {
+        margin: 0 3% 2rem 3%;
+    }
     #episodeTitle {
         margin: 1.5rem 0 0.75rem 0;
     }
-
-    #episodeInfoContainer p {
-        font-size: 1.4rem;
-    }
-
-    #episodeInfo {
-        margin: 0 0 2rem 0;
-    }
-
     #episodeStreamLink {
         text-align: center;
+    }
+    #showNotes-container {
+        font-size: 1.3rem;
     }
 
 }

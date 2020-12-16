@@ -1,14 +1,13 @@
 import React from 'react'
 import './Ep.css'
 
-import NavBar from '../NavBar/NavBar'
+import Nav from '../Nav/Nav'
 import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
 import episodeData from '../../EpisodeData.json'
-import ActionButton from '../ActionButton/ActionButton'
 import { v4 as uuidv4 } from 'uuid'
 
 const Ep = () => (<div>
-    <NavBar />
+    <Nav />
     <LeftCoverArt />
     <div>
         <h1 id="allEpsPageLabel">All Episodes</h1>
@@ -20,7 +19,7 @@ const Ep = () => (<div>
                         <a href={`/ep/${epInfo.id}`}><h1>{epInfo.id}: {epInfo.title}</h1></a>
                         <h2>{epInfo.publishDate}</h2>
                         <p>{epInfo.description}</p>
-                        <ActionButton link={epInfo.listenLink} alt={`Listen to ${epInfo.title}`} message="Stream this episode" />
+                        <h2><a href={epInfo.listenLink}>Stream this episode</a></h2>
                     </div>
                 )
             })

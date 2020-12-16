@@ -3,15 +3,14 @@ import './Home.css'
 
 import { Link } from 'react-router-dom'
 
-import NavBar from '../NavBar/NavBar'
+import Nav from '../Nav/Nav'
 import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
 import episodeData from '../../EpisodeData.json'
-import ActionButton from '../ActionButton/ActionButton'
 
 import { v4 as uuidv4 } from 'uuid'
 
 const Home = () => (<div>
-    <NavBar />
+    <Nav />
     <LeftCoverArt />
     <h1 id="showDescription">A podcast from <a href="https://lukelechel.com" rel="noopener noreferrer">Luke Lechel</a> about technology, productivity, and fitness.</h1>
     <div id="recentEpisodesSection">
@@ -25,7 +24,7 @@ const Home = () => (<div>
                             <h1><Link to={`/ep/${epInfo.id}`}>{epInfo.id}: {epInfo.title}</Link></h1>
                             <h2>{epInfo.publishDate}</h2>
                             <p>{epInfo.description}</p>
-                            <ActionButton link={epInfo.listenLink} alt={`Listen to ${epInfo.title}`} message="Stream this episode" />
+                            <h2><a href={epInfo.listenLink}>Stream this episode</a></h2>
                         </div>
                     )
                 } else {

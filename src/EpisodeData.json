@@ -10,7 +10,6 @@
                 "isLink": true,
                 "title": "Activity Stats on the App Store",
                 "link": "https://apps.apple.com/us/app/activity-stats/id1511179040",
-                "alt": "Activity Stats by Indie Computing Labs, LLC on the App Store",
                 "straightUpText": ""
             }
         ]
@@ -26,7 +25,6 @@
                 "isLink": false,
                 "title": "",
                 "link": "",
-                "alt": "",
                 "straightUpText": ""
             }
         ]
@@ -42,71 +40,61 @@
                 "isLink": true,
                 "title": "WhatCulture Gaming Podcast",
                 "link": "https://podcasts.apple.com/gb/podcast/whatculture-gaming/id1433583146",
-                "alt": "WhatCulture Gaming on Apple Podcasts",
-                "straightUpText": null
+                "straightUpText": ""
             },
             {
                 "isLink": true,
                 "title": "The Test Drivers Podcast",
                 "link": "https://www.relay.fm/testdrivers",
-                "alt": "The Test Drivers - Relay FM",
-                "straightUpText": null
+                "straightUpText": ""
             },
             {
                 "isLink": true,
                 "title": "ARM acquisition by Nvidia - The Verge",
                 "link": "https://www.theverge.com/2020/9/13/21435507/nvidia-acquiring-arm-40-billion-chips-ai-deal",
-                "alt": "Nvidia is acquiring Arm for $40 billion - The Verge",
-                "straightUpText": null
+                "straightUpText": ""
             },
             {
                 "isLink": true,
                 "title": "United States presidential state car - Wikipedia",
                 "link": "https://en.wikipedia.org/wiki/Presidential_state_car_(United_States)",
-                "alt": "Presidential state car (United States) - Wikipedia",
-                "straightUpText": null
+                "straightUpText": ""
             },
             {
                 "isLink": true,
                 "title": "Wahoo Blue SC Speed and Cadence Cycling Sensor",
                 "link": "https://www.wahoofitness.com/devices/bike-sensors/wahoo-blue-sc-speed-and-cadence-sensor",
-                "alt": "Blue SC Wireless Speed & Cadence Cycling Sensor | Wahoo Fitness",
-                "straightUpText": null
+                "straightUpText": ""
             },
             {
                 "isLink": true,
                 "title": "Under Armour Heart Rate Monitor Chest Strap",
                 "link": "https://www.amazon.com/Under-Armour-Heart-Rate-Monitor/dp/B07PDNH6Q3",
-                "alt": "Under Armour Heart Rate Monitor - Amazon",
-                "straightUpText": null
+                "straightUpText": ""
             },
             {
                 "isLink": true,
                 "title": "Nike+iPod Sports Kit",
                 "link": "https://www.apple.com/in/ipod/nike/",
-                "alt": "Run or workout with Nike + iPod - Apple",
-                "straightUpText": null
+                "straightUpText": ""
             },
             {
                 "isLink": true,
                 "title": "Wahoo Fitness",
                 "link": "https://www.wahoofitness.com/",
-                "alt": "Wahoo Fitness",
-                "straightUpText": null
+                "straightUpText": ""
             },
             {
                 "isLink": true,
                 "title": "Wahoo Fitness on the App Store",
                 "link": "https://apps.apple.com/us/app/wahoo-fitness/id391599899",
-                "alt": "Wahoo Fitness on the App Store",
-                "straightUpText": null
+                "straightUpText": ""
             },
             {
                 "isLink": true,
                 "title": "Apple Fitness+",
                 "link": "https://www.apple.com/apple-fitness-plus/",
-                "alt": "Apple Fitness+",
-                "straightUpText": null
+                "straightUpText": ""
             }
         ]
     }

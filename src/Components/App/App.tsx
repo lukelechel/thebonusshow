@@ -6,7 +6,7 @@ import './App.css'
 import Home from '../Home/Home'
 import Ep from '../Ep/Ep'
 import EpisodePage from '../EpisodePage/EpisodePage'
-import { Error } from '../Error/Error'
+import Error from '../Error/Error'
 
 const App = () => (<BrowserRouter>
     <Switch>

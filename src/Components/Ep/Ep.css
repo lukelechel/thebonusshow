@@ -2,15 +2,15 @@
     margin-bottom: 3rem;
 }
 .episodeListing h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 120%;
 }
 .episodeListing h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin: 0.25rem 0;
 }
 .episodeListing p {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
 }
 
 /* ---------------------- */
@@ -28,6 +28,7 @@
 
     .episodeListing {
         margin-left: 1rem;
+        max-width: 55%;
     }
     .episodeListing h1 {
         width: 85%;
@@ -50,6 +51,7 @@
 
     .episodeListing {
         margin-left: 1rem;
+        max-width: 55%;
     }
     .episodeListing h1 {
         width: 85%;
