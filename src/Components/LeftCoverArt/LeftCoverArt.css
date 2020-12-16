@@ -1,5 +1,5 @@
-#leftCoverArt img {
-    max-width: 100%;
+#cover-art {
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0.25rem 0.2rem 0.5rem #b8b8b8;
     margin: 0 auto;
@@ -15,11 +15,12 @@
 
 @media only screen and (min-width: 1300px) {
 
-    #leftCoverArt {
+    #cover-art {
         min-width: 32rem;
         max-width: 32rem;
+        min-height: 32rem;
+        max-height: 32rem;
         margin-right: 2rem;
-        padding: 1rem 2rem 1rem 3rem;
     }
 
 }
@@ -32,11 +33,12 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1299px) {
 
-    #leftCoverArt {
+    #cover-art {
         min-width: 22rem;
         max-width: 22rem;
-        margin-right: 1rem;
-        padding: 1rem 2rem 1rem 3rem;
+        min-height: 22rem;
+        max-height: 22rem;
+        margin: 0 2rem 0 1rem;
     }
 
 }
@@ -49,11 +51,10 @@
 
 @media only screen and (max-width: 768px) {
 
-    #leftCoverArt {
+    #cover-art {
         min-width: 0;
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
-        padding: 0;
     }
 
 }
