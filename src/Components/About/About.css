@@ -1,0 +1,15 @@
+#about-content {
+    margin: 1rem;
+    text-align: center;
+}
+#about-content p {
+    font-size: 1.3rem;
+}
+
+#listenElement {
+    padding-top: 1rem;
+}
+#listenElement * {
+    margin: 0.25rem auto;
+    justify-content: center;
+}

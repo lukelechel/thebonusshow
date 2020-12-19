@@ -51,7 +51,7 @@ const iconLibrary = [
     }
 ]
 
-const PodcastAppBar = () => (<ul id="podcastAppBar">
+export const PodcastAppBar = () => (<ul id="podcastAppBar">
     {
         iconLibrary.map(x => (
             <li key={x.platform}>
