@@ -6,19 +6,20 @@ const awsResourceUriPrefix = "https://thebonusshow-resources.s3.us-east-2.amazon
 
 const navigationLibrary = [
     {
+        title: "Home",
+        link: "/"
+    },
+    {
+        title: "About",
+        link: "/about"
+    },
+    {
         title: "Episodes",
-        link: "/Ep",
-        alt: "Episodes"
+        link: "/ep"
     },
     {
-        title: "Instagram",
-        link: "https://www.instagram.com/thebonusshow",
-        alt: "The Bonus Show on Instagram"
-    },
-    {
-        title: "YouTube",
-        link: "https://www.youtube.com/channel/UCSVYJ-ZKxZx2Gv-I69wYcWg",
-        alt: "The Bonus Show on YouTube"
+        title: "Feedback",
+        link: "/feedback"
     }
 ]
 
@@ -50,6 +51,23 @@ const iconLibrary = [
     }
 ]
 
+const PodcastAppBar = () => (<ul id="podcastAppBar">
+    {
+        iconLibrary.map(x => (
+            <li key={x.platform}>
+                <a
+                    href={x.link}
+                    title={`The Bonus Show on ${x.platform}`}
+                    rel="noopener noreferrer">
+                    <img
+                        src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
+                        alt={`${x.platform} logo`} />
+                </a>
+            </li>
+        ))
+    }
+</ul>)
+
 const Nav = () => (<div id="navBarContainer">
     <a
         href="/"
@@ -58,23 +76,6 @@ const Nav = () => (<div id="navBarContainer">
     </a>
 
     <div id="navBarRight">
-        <ul id="podcastAppBar">
-            {
-                iconLibrary.map(x => (
-                    <li key={x.platform}>
-                        <a
-                            href={x.link}
-                            title={`The Bonus Show on ${x.platform}`}
-                            rel="noopener noreferrer">
-                            <img
-                                src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
-                                alt={`${x.platform} logo`} />
-                        </a>
-                    </li>
-                ))
-            }
-        </ul>
-        
         <ul id="navigationBar">
             {
                 navigationLibrary.map(x => (
@@ -86,6 +87,7 @@ const Nav = () => (<div id="navBarContainer">
                 ))
             }
         </ul>
+        <PodcastAppBar />
     </div>
 </div>)
 
