@@ -10,10 +10,6 @@ const navigationLibrary = [
         link: "/"
     },
     {
-        title: "About",
-        link: "/about"
-    },
-    {
         title: "Episodes",
         link: "/ep"
     },
