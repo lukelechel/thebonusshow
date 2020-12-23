@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 const Ep = () => (<div>
     <Nav />
-    <LeftCoverArt />
+    <div className="desktopOnly"><LeftCoverArt /></div>
     <div>
         <h1 id="allEpsPageLabel">All Episodes</h1>
         {
@@ -25,6 +25,7 @@ const Ep = () => (<div>
             })
         }
     </div>
+    <div className="mobileOnly"><LeftCoverArt /></div>
 </div>)
 
 export default Ep

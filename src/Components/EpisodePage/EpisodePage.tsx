@@ -12,7 +12,7 @@ export default function EpisodePage() {
     const episodeInfo = episodeData.find(x => x.id === id)
     return (<div>
         <Nav />
-        <LeftCoverArt />
+        <div className="desktopOnly"><LeftCoverArt /></div>
         {
             episodeInfo ? (
                 <div id="episodeInfo">

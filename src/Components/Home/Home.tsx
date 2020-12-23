@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 const Home = () => (<div>
     <Nav />
-    <LeftCoverArt />
+    <div className="desktopOnly"><LeftCoverArt /></div>
     <div id="recentEpisodesSection">
         <h1 id="recentEpsLabel">Recent episodes</h1>
         {
@@ -33,6 +33,7 @@ const Home = () => (<div>
             })
         }
     </div>
+    <div className="mobileOnly"><LeftCoverArt /></div>
 </div>)
 
 export default Home

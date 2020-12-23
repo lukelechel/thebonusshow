@@ -15,7 +15,6 @@
     font-size: 1.1rem;
     color: white;
     font-style: italic;
-    margin: 0.5rem 0 0 0;
     user-select: none;
 }
 
@@ -29,7 +28,6 @@
     font-weight: 700;
     margin: auto 0.8rem;
 }
-
 #navigationBar li a {
     color: white;
 }
@@ -62,7 +60,8 @@
     }
 
     #titleEmoji {
-        margin-right: 1rem;
+        font-size: 2.3rem;
+        margin-right: 0.5rem;
     }
 
     #navBarRight {
@@ -81,7 +80,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1299px) {
 
     #navBarContainer {
-        padding: 1.5rem 5%;
+        padding: 0.5rem 5%;
     }
 
     #navLeft h1 {
@@ -101,7 +100,9 @@
     }
 
     #navigationBar li {
+        font-size: 1.2rem;
         justify-content: space-between;
+        padding-bottom: 0.3rem;
     }
 
     /* PodcastAppBar */
@@ -112,7 +113,7 @@
         justify-content: space-between;
     }
     #podcastAppBar img {
-        min-width: 2.5rem;
+        width: 1.7rem;
     }
 
 }
@@ -128,7 +129,7 @@
     #navBarContainer {
         display: block;
         margin: 0 auto;
-        padding: 1.5rem 0.5rem;
+        padding: 1rem 0.5rem;
     }
 
     #navLeft h1 {
@@ -139,13 +140,16 @@
         display: none;
     }
     #navLeft p {
+        font-size: 1.3rem;
         text-align: center;
-        margin: 1rem 0;
+        margin: 0.5rem 0 1rem 0;
     }
 
     #navBarRight {
         display: block;
         width: 100%;
+        border-top: 1px solid white;
+        padding-top: 0.75rem;
     }
 
     #navigationBar li {

@@ -37,6 +37,34 @@ ul {
     border: 0;
 }
 
+/* ---------------------- */
+/* ---------------------- */
+/* ---- DESKTOP ONLY ---- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 1300px) {
+
+    .mobileOnly {
+        display: none;
+    }
+
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- TABLET ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (min-width: 769px) and (max-width: 1299px) {
+
+    .mobileOnly {
+        display: none;
+    }
+
+}
+
 
 
 /* ---------------------- */
@@ -49,6 +77,10 @@ ul {
 
     body {
         margin: 0 0 3rem 0;
+    }
+
+    .desktopOnly {
+        display: none;
     }
 
 }
