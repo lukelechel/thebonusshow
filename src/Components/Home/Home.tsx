@@ -12,9 +12,8 @@ import { v4 as uuidv4 } from 'uuid'
 const Home = () => (<div>
     <Nav />
     <LeftCoverArt />
-    <h1 id="showDescription">A podcast from <a href="https://lukelechel.com" rel="noopener noreferrer">Luke Lechel</a> about technology, productivity, and fitness. Episodes are released on a regular "surprise" schedule.</h1>
     <div id="recentEpisodesSection">
-        <h1 id="recentEpsLabel">Recent episodes:</h1>
+        <h1 id="recentEpsLabel">Recent episodes</h1>
         {
             episodeData.slice(0).reverse().map((epInfo, index) => {
                 let episodeId = `ep${epInfo.id}`

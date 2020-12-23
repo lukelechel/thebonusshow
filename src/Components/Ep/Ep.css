@@ -1,3 +1,8 @@
+#allEpsPageLabel {
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+
 .episodeListing {
     margin-bottom: 3rem;
 }
@@ -21,11 +26,6 @@
 
 @media only screen and (min-width: 1300px) {
 
-    #allEpsPageLabel {
-        font-size: 1.8rem;
-        margin: 1rem;
-    }
-
     .episodeListing {
         margin-left: 1rem;
         max-width: 55%;
@@ -43,11 +43,6 @@
 /* ---------------------- */
 
 @media only screen and (min-width: 769px) and (max-width: 1299px) {
-
-    #allEpsPageLabel {
-        font-size: 1.8rem;
-        margin: 1rem;
-    }
 
     .episodeListing {
         margin-left: 1rem;

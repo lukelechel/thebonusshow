@@ -65,11 +65,14 @@ export const PodcastAppBar = () => (<ul id="podcastAppBar">
 </ul>)
 
 const Nav = () => (<div id="navBarContainer">
-    <a
-        href="/"
-        rel="noopener noreferrer">
-            <h1 id="siteTitle"><span id="titleEmoji" role="img" aria-label={emoji.getName('⚡️')}>⚡️</span>The Bonus Show</h1>
-    </a>
+    <div id="navLeft">
+        <a
+            href="/"
+            rel="noopener noreferrer">
+                <h1><span id="titleEmoji" role="img" aria-label={emoji.getName('⚡️')}>⚡️</span>The Bonus Show</h1>
+        </a>
+        <p>A podcast from Luke Lechel about technology, productivity, and fitness.</p>
+    </div>
 
     <div id="navBarRight">
         <ul id="navigationBar">

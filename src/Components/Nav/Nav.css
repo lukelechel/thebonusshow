@@ -3,7 +3,7 @@
     justify-content: space-between;
 }
 
-#siteTitle {
+#navLeft h1 {
     font-family: 'Gotham Bold', 'Noto Sans', sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
@@ -11,18 +11,12 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-#podcastAppBar {
-    display: flex;
-    margin: 0.4rem 1rem 0 0;
-}
-
-#podcastAppBar li {
-    margin: auto 0.65rem;
-}
-
-#podcastAppBar img {
-    width: 2.3rem;
+#navLeft p {
+    font-size: 1.1rem;
+    color: white;
+    font-style: italic;
+    margin: 0.5rem 0 0 0;
+    user-select: none;
 }
 
 #navigationBar {
@@ -38,6 +32,18 @@
 
 #navigationBar li a {
     color: white;
+}
+
+/* PodcastAppBar */
+#podcastAppBar {
+    display: flex;
+    margin: 0.4rem 1rem 0 0;
+}
+#podcastAppBar li {
+    margin: auto 0.65rem;
+}
+#podcastAppBar img {
+    width: 2.3rem;
 }
 
 
@@ -78,8 +84,14 @@
         padding: 1.5rem 5%;
     }
 
+    #navLeft h1 {
+        text-align: center;
+    }
     #titleEmoji {
         margin-right: 1rem;
+    }
+    #navLeft p {
+        text-align: center;
     }
 
     #navBarRight {
@@ -88,24 +100,19 @@
         justify-content: center;
     }
 
-    #siteTitle {
-        text-align: center;
+    #navigationBar li {
+        justify-content: space-between;
     }
 
+    /* PodcastAppBar */
     #podcastAppBar {
         margin: auto 0 auto 0;
     }
-
     #podcastAppBar li {
         justify-content: space-between;
     }
-
     #podcastAppBar img {
         min-width: 2.5rem;
-    }
-
-    #navigationBar li {
-        justify-content: space-between;
     }
 
 }
@@ -124,8 +131,16 @@
         padding: 1.5rem 0.5rem;
     }
 
+    #navLeft h1 {
+        text-align: center;
+        font-size: 2.3rem;
+    }
     #titleEmoji {
         display: none;
+    }
+    #navLeft p {
+        text-align: center;
+        margin: 1rem 0;
     }
 
     #navBarRight {
@@ -133,25 +148,19 @@
         width: 100%;
     }
 
-    #siteTitle {
-        text-align: center;
-        font-size: 3rem;
+    #navigationBar li {
+        margin: 0 auto;
     }
 
+    /* PodcastAppBar */
     #podcastAppBar {
         margin: 1.5rem 0 0.5rem 0;
     }
-
     #podcastAppBar li {
         margin: 0 auto;
     }
-
     #podcastAppBar img {
         min-width: 3rem;
-    }
-
-    #navigationBar li {
-        margin: 0 auto;
     }
 
 }

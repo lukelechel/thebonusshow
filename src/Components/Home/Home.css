@@ -1,45 +1,6 @@
 #recentEpsLabel {
-    margin-bottom: 1rem;
-}
-
-/* ---------------------- */
-/* ---------------------- */
-/* ---- DESKTOP ONLY ---- */
-/* ---------------------- */
-/* ---------------------- */
-
-@media only screen and (min-width: 1300px) {
-
-    #showDescription {
-        font-size: 1.8rem;
-        margin: 1rem 1rem 2rem 1rem;
-    }
-
-    #recentEpsLabel {
-        font-size: 1.8rem;
-        margin: 1rem 1rem 0.5rem 1rem;
-    }
-
-}
-
-/* ---------------------- */
-/* ---------------------- */
-/* ---- TABLET ONLY ----- */
-/* ---------------------- */
-/* ---------------------- */
-
-@media only screen and (min-width: 769px) and (max-width: 1299px) {
-
-    #showDescription {
-        font-size: 1.8rem;
-        margin: 1rem 1rem 2rem 1rem;
-    }
-
-    #recentEpsLabel {
-        font-size: 1.8rem;
-        margin: 1rem 1rem 0.5rem 1rem;
-    }
-
+    font-size: 1.8rem;
+    margin: 1rem;
 }
 
 /* ---------------------- */
@@ -50,15 +11,7 @@
 
 @media only screen and (max-width: 768px) {
 
-    #showDescription {
-        font-size: 1.8rem;
-        margin: 2rem 0 3rem 0;
-        text-align: center;
-    }
-
     #recentEpsLabel {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
         text-align: center;
     }
 
