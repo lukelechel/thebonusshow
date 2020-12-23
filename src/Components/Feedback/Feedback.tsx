@@ -91,7 +91,11 @@ function FeedbackForm() {
 
 const Feedback = () => (<div>
     <Nav />
-    <h1>Feedback</h1>
+    <div id="feedback-page-info">
+        <h1>Feedback</h1>
+        <p>You've heard from me.</p>
+        <p>This is my turn to hear from you.</p>
+    </div>
     <FeedbackForm />
 </div>)
 
