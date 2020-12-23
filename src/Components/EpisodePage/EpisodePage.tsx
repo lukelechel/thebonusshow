@@ -2,7 +2,7 @@ import React from 'react'
 import './EpisodePage.css'
 
 import Nav from '../Nav/Nav'
-import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
+import CoverArt from '../CoverArt/CoverArt'
 import episodeData from '../../EpisodeData.json'
 
 import { useParams } from 'react-router-dom'
@@ -12,7 +12,7 @@ export default function EpisodePage() {
     const episodeInfo = episodeData.find(x => x.id === id)
     return (<div>
         <Nav />
-        <div className="desktopOnly"><LeftCoverArt /></div>
+        <div className="desktopOnly"><CoverArt /></div>
         {
             episodeInfo ? (
                 <div id="episodeInfo">

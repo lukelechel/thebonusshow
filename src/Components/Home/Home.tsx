@@ -4,14 +4,14 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 
 import Nav from '../Nav/Nav'
-import LeftCoverArt from '../LeftCoverArt/LeftCoverArt'
+import CoverArt from '../CoverArt/CoverArt'
 import episodeData from '../../EpisodeData.json'
 
 import { v4 as uuidv4 } from 'uuid'
 
 const Home = () => (<div>
     <Nav />
-    <div className="desktopOnly"><LeftCoverArt /></div>
+    <div className="desktopOnly"><CoverArt /></div>
     <div id="recentEpisodesSection">
         <h1 id="recentEpsLabel">Recent episodes</h1>
         {
@@ -33,7 +33,7 @@ const Home = () => (<div>
             })
         }
     </div>
-    <div className="mobileOnly"><LeftCoverArt /></div>
+    <div className="mobileOnly"><CoverArt /></div>
 </div>)
 
 export default Home
