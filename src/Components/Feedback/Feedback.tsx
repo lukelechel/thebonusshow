@@ -51,7 +51,7 @@ function FeedbackForm() {
 
     const returnSpinner = () => (<div id="spinner">
         <h3>Sending message...</h3>
-        {/* ideally add spinner here */}
+        <img src="https://thebonusshow-resources.s3.us-east-2.amazonaws.com/spinner.gif" id="loadingSpinner" alt="Loading spinner" />
     </div>)
 
     const returnDone = () => (<div id="formDone">

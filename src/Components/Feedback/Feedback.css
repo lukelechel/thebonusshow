@@ -44,13 +44,14 @@
     -webkit-appearance: none;
 }
 #feedback-form input[type=button]:hover {
-    background-color: #f8d041;
+    background-color: #01ab48;
     transition: 0.3s ease-in-out;
 }
 
 #loadingSpinner {
     display: block;
     justify-content: center;
+    max-width: 3.5rem;
 }
 
 #formDone {
