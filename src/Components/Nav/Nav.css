@@ -1,9 +1,9 @@
-#navBarContainer {
+#nav-container {
     background-color: #15294e;
     justify-content: space-between;
 }
 
-#navLeft h1 {
+#nav-left h1 {
     font-family: 'Gotham Bold', 'Noto Sans', sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
@@ -11,24 +11,24 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-#navLeft p {
+#nav-left p {
     font-size: 1.1rem;
     color: white;
     font-style: italic;
     user-select: none;
 }
 
-#navigationBar {
+#nav-items {
     display: flex;
 }
 
-#navigationBar li {
+#nav-items li {
     font-family: 'Gotham Bold', 'Noto Sans', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     margin: auto 0.8rem;
 }
-#navigationBar li a {
+#nav-items li a {
     color: white;
 }
 
@@ -54,7 +54,7 @@
 
 @media only screen and (min-width: 1300px) {
 
-    #navBarContainer {
+    #nav-container {
         display: flex;
         padding: 0.75rem 1rem 1.25rem 1rem;
     }
@@ -64,7 +64,7 @@
         margin-right: 0.5rem;
     }
 
-    #navBarRight {
+    #nav-right {
         display: flex;
         margin: auto 0;
     }
@@ -79,27 +79,27 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1299px) {
 
-    #navBarContainer {
+    #nav-container {
         padding: 0.5rem 5%;
     }
 
-    #navLeft h1 {
+    #nav-left h1 {
         text-align: center;
     }
     #titleEmoji {
         margin-right: 1rem;
     }
-    #navLeft p {
+    #nav-left p {
         text-align: center;
     }
 
-    #navBarRight {
+    #nav-right {
         display: flex;
         margin: 1rem auto 0 auto;
         justify-content: center;
     }
 
-    #navigationBar li {
+    #nav-items li {
         font-size: 1.2rem;
         justify-content: space-between;
         padding-bottom: 0.3rem;
@@ -126,33 +126,31 @@
 
 @media only screen and (max-width: 768px) {
 
-    #navBarContainer {
+    #nav-container {
         display: block;
         margin: 0 auto;
         padding: 1rem 0.5rem;
     }
 
-    #navLeft h1 {
+    #nav-left h1 {
         text-align: center;
         font-size: 2.3rem;
     }
     #titleEmoji {
         display: none;
     }
-    #navLeft p {
+    #nav-left p {
         font-size: 1.3rem;
         text-align: center;
-        margin: 0.5rem 0 1rem 0;
+        margin: 0.5rem 0 0.75rem 0;
     }
 
-    #navBarRight {
+    #nav-right {
         display: block;
         width: 100%;
-        border-top: 1px solid white;
-        padding-top: 0.75rem;
     }
 
-    #navigationBar li {
+    #nav-items li {
         margin: 0 auto;
     }
 

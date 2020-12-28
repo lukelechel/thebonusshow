@@ -64,8 +64,8 @@ export const PodcastAppBar = () => (<ul id="podcastAppBar">
     }
 </ul>)
 
-const Nav = () => (<div id="navBarContainer">
-    <div id="navLeft">
+const Nav = () => (<div id="nav-container">
+    <div id="nav-left">
         <a
             href="/"
             rel="noopener noreferrer">
@@ -74,8 +74,8 @@ const Nav = () => (<div id="navBarContainer">
         <p>A podcast from Luke Lechel about technology, productivity, and fitness.</p>
     </div>
 
-    <div id="navBarRight">
-        <ul id="navigationBar">
+    <div id="nav-right">
+        <ul id="nav-items">
             {
                 navigationLibrary.map(x => (
                     <li key={x.title}>
