@@ -1,11 +1,10 @@
 import React from 'react'
 import './EpisodePage.css'
-
 import Nav from '../Nav/Nav'
 import CoverArt from '../CoverArt/CoverArt'
 import episodeData from '../../EpisodeData.json'
-
 import { useParams } from 'react-router-dom'
+import { ActionButton } from '../Ep/Ep'
 
 export default function EpisodePage() {
     const { id } = useParams()
@@ -19,7 +18,7 @@ export default function EpisodePage() {
                     <h1 id="episodeTitle">{episodeInfo.id}: {episodeInfo.title}</h1>
                     <h2 id="episodePublishDate">{episodeInfo.publishDate}</h2>
                     <p id="episodeDescription">{episodeInfo.description}</p>
-                    <p id="episodeDescription"><a href={episodeInfo.listenLink}>Stream this episode</a></p>
+                    <ActionButton emoji="⚡️" text={`Stream episode ${episodeInfo.id}`} link={episodeInfo.listenLink} />
                 
                     <h1 id="showNotesTitle">Show Notes</h1>
                     <ul id="showNotes-container">

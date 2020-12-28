@@ -1,13 +1,11 @@
 import React from 'react'
 import './Home.css'
-
 import { Link } from 'react-router-dom'
-
 import Nav from '../Nav/Nav'
 import CoverArt from '../CoverArt/CoverArt'
 import episodeData from '../../EpisodeData.json'
-
 import { v4 as uuidv4 } from 'uuid'
+import { ActionButton } from '../Ep/Ep'
 
 const Home = () => (<div>
     <Nav />
@@ -22,7 +20,7 @@ const Home = () => (<div>
                             <h1><Link to={`/ep/${epInfo.id}`}>{epInfo.id}: {epInfo.title}</Link></h1>
                             <h2>{epInfo.publishDate}</h2>
                             <p>{epInfo.description}</p>
-                            <h2><a href={epInfo.listenLink}>Stream this episode</a></h2>
+                            <ActionButton emoji="⚡️" text={`Stream episode ${epInfo.id}`} link={epInfo.listenLink} />
                         </div>)
                     } else {
                         return null

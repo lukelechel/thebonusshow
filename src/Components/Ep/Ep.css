@@ -18,6 +18,33 @@
     font-size: 1.25rem;
 }
 
+/* ActionButton */
+
+#actionbutton-container {
+    display: inline-block;
+    margin-top: 1.2rem;
+}
+#actionbutton-container a {
+    color: white;
+    background-color: #1f84ff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+#actionbutton-container a:hover {
+    color: white;
+    background-color: #3a93ff;
+}
+#action-emoji {
+    margin-right: 0.1rem;
+}
+
+
+
+
+
 /* ---------------------- */
 /* ---------------------- */
 /* ---- DESKTOP ONLY ---- */

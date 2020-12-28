@@ -6,9 +6,17 @@ import CoverArt from '../CoverArt/CoverArt'
 import episodeData from '../../EpisodeData.json'
 import { v4 as uuidv4 } from 'uuid'
 
+export const ActionButton = (props: {emoji:string, text:string, link:string}) => (<div id="actionbutton-container">
+    <a href={props.link} rel="noopener noreferrer">
+        <span id="action-emoji">{props.emoji}</span>
+        {props.text}
+    </a>
+</div>)
+
 const Ep = () => (<div>
     <Nav />
     <div className="desktopOnly"><CoverArt /></div>
+
     <div>
         <h1 id="allEpsPageLabel">All Episodes</h1>
         {
@@ -19,12 +27,13 @@ const Ep = () => (<div>
                         <a href={`/ep/${epInfo.id}`}><h1>{epInfo.id}: {epInfo.title}</h1></a>
                         <h2>{epInfo.publishDate}</h2>
                         <p>{epInfo.description}</p>
-                        <h2><a href={epInfo.listenLink}>Stream this episode</a></h2>
+                        <ActionButton emoji="⚡️" text={`Stream episode ${epInfo.id}`} link={epInfo.listenLink} />
                     </div>
                 )
             })
         }
     </div>
+
     <div className="mobileOnly"><CoverArt /></div>
 </div>)
 
