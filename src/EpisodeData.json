@@ -97,5 +97,38 @@
                 "straightUpText": ""
             }
         ]
+    },
+    {
+        "id": "004",
+        "title": "Checking To-Dos",
+        "publishDate": "29 December 2020",
+        "description": "When productivity entropies, what's next?",
+        "listenLink": "https://thebonusshow-resources.s3.us-east-2.amazonaws.com/episode-mp3s/TheBonusShow-004.mp3",
+        "showNotes": [
+            {
+                "isLink": true,
+                "title": "Todoist",
+                "link": "https://todoist.com",
+                "straightUpText": ""
+            },
+            {
+                "isLink": true,
+                "title": "OmniFocus",
+                "link": "https://www.omnigroup.com/omnifocus/",
+                "straightUpText": ""
+            },
+            {
+                "isLink": true,
+                "title": "Things 3",
+                "link": "https://culturedcode.com/things/",
+                "straightUpText": ""
+            },
+            {
+                "isLink": true,
+                "title": "The Bonus Show - Feedback",
+                "link": "https://thebonusshow.com/feedback/",
+                "straightUpText": ""
+            }
+        ]
     }
 ]
