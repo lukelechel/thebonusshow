@@ -19,7 +19,9 @@
 }
 #showNotes-container {
     font-size: 1.1rem;
-    line-height: 200%;
+}
+#showNotes-container * {
+    margin-bottom: 0.75rem;
 }
 
 
