@@ -1,6 +1,7 @@
 import React from 'react'
 import './Ep.css'
-import GetAllEpisodes from '../GetAllEpisodes/GetAllEpisodes'
+import epDataFetcher from '../EpDataFetcher/EpDataFetcher'
+import { Link } from 'react-router-dom'
 
 import Nav from '../Nav/Nav'
 import CoverArt from '../CoverArt/CoverArt'
@@ -19,7 +20,17 @@ const Ep = () => (<div>
     <div>
         <h1 id="allEpsPageLabel">All Episodes</h1>
         {
-            <GetAllEpisodes />
+            epDataFetcher().slice(0).reverse().map((x, i) => {
+                let episodeId = `ep${x.id}`
+                return (
+                    <div id={episodeId} className="episodeListing" key={i}>
+                        <h1><Link to={`/ep/${x.id}`}>{x.id}: {x.title}</Link></h1>
+                        <h2>{x.publishDate}</h2>
+                        <p>{x.description}</p>
+                        <ActionButton emoji="⚡️" text={`Stream episode ${x.id}`} link={x.listenLink} />
+                    </div>
+                )
+            })
         }
     </div>
 

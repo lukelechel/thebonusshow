@@ -2,27 +2,27 @@ import React from 'react'
 import './EpisodePage.css'
 import Nav from '../Nav/Nav'
 import CoverArt from '../CoverArt/CoverArt'
-import episodeData from '../../EpisodeData.json'
+import epDataFetcher from '../EpDataFetcher/EpDataFetcher'
 import { useParams } from 'react-router-dom'
 import { ActionButton } from '../Ep/Ep'
 
 export default function EpisodePage() {
     const { id } = useParams()
-    const episodeInfo = episodeData.find(x => x.id === id)
+    const thisEpisodeInfo = epDataFetcher().find(x => x.id === id)
     return (<div>
         <Nav />
         <div className="desktopOnly"><CoverArt /></div>
         {
-            episodeInfo ? (
+            thisEpisodeInfo ? (
                 <div id="episodeInfo">
-                    <h1 id="episodeTitle">{episodeInfo.id}: {episodeInfo.title}</h1>
-                    <h2 id="episodePublishDate">{episodeInfo.publishDate}</h2>
-                    <p id="episodeDescription">{episodeInfo.description}</p>
-                    <ActionButton emoji="⚡️" text={`Stream episode ${episodeInfo.id}`} link={episodeInfo.listenLink} />
+                    <h1 id="episodeTitle">{thisEpisodeInfo.id}: {thisEpisodeInfo.title}</h1>
+                    <h2 id="episodePublishDate">{thisEpisodeInfo.publishDate}</h2>
+                    <p id="episodeDescription">{thisEpisodeInfo.description}</p>
+                    <ActionButton emoji="⚡️" text={`Stream episode ${thisEpisodeInfo.id}`} link={thisEpisodeInfo.listenLink} />
                 
                     <h1 id="showNotesTitle">Show Notes</h1>
                     <ul id="showNotes-container">
-                        {episodeInfo.showNotes.map((x, i) => (
+                        {thisEpisodeInfo.showNotes.map((x, i) => (
                             x.isLink ?
                             <a href={x.link} title={x.title} key={i}><li>{x.title}</li></a>
                             :
