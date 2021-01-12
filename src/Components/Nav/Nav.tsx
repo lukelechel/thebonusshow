@@ -1,5 +1,6 @@
 import React from 'react'
 import './Nav.css'
+import { Link } from 'react-router-dom'
 
 const emoji = require("emoji-dictionary")
 const awsResourceUriPrefix = "https://thebonusshow-resources.s3.us-east-2.amazonaws.com/"
@@ -66,11 +67,9 @@ export const PodcastAppBar = () => (<ul id="podcastAppBar">
 
 const Nav = () => (<div id="nav-container">
     <div id="nav-left">
-        <a
-            href="/"
-            rel="noopener noreferrer">
-                <h1><span id="titleEmoji" role="img" aria-label={emoji.getName('⚡️')}>⚡️</span>The Bonus Show</h1>
-        </a>
+        <Link to="/">
+            <h1><span id="titleEmoji" role="img" aria-label={emoji.getName('⚡️')}>⚡️</span>The Bonus Show</h1>
+        </Link>
         <p>A podcast from Luke Lechel about technology, productivity, and fitness.</p>
     </div>
 
