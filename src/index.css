@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 @font-face {
     font-family: 'Gotham Bold';
     src: url('../src/Gotham_Bold.otf');
@@ -7,17 +7,19 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #f7f7f7;
+    background-color: #fafafa;
 }
 
 p {
     color: #31383f;
+    font-weight: 400;
 }
 
 a {
