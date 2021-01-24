@@ -32,10 +32,11 @@
     padding: 0.5rem 1.25rem;
     border-radius: 10px;
     text-transform: uppercase;
+    transition: 300ms ease-in-out;
 }
 #actionbutton-container a:hover {
-    color: white;
-    background-color: #3a93ff;
+    box-shadow: 0.25rem 0.2rem 0.5rem #b8b8b8;
+    transition: 300ms ease-in-out;
 }
 #action-emoji {
     margin-right: 0.1rem;

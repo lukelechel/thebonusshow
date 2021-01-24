@@ -1,7 +1,6 @@
 import React from 'react'
 import './EpisodePage.css'
 import Nav from '../Nav/Nav'
-import CoverArt from '../CoverArt/CoverArt'
 import epDataFetcher from '../EpDataFetcher/EpDataFetcher'
 import { useParams } from 'react-router-dom'
 import { ActionButton } from '../Ep/Ep'
@@ -11,7 +10,6 @@ export default function EpisodePage() {
     const thisEpisodeInfo = epDataFetcher().find(x => x.id === id)
     return (<div>
         <Nav />
-        <div className="desktopOnly"><CoverArt /></div>
         {
             thisEpisodeInfo ? (
                 <div id="episodeInfo">
