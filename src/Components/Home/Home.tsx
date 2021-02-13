@@ -13,9 +13,13 @@ const Title = () => (<div id="titleSection">
                 ${awsResourceUriPrefix}thebonusshow-cover-medium.png 1000w`}
         src={`${awsResourceUriPrefix}thebonusshow-cover-full.jpg`}
         alt="The Bonus Show cover art"
-        id="coverart" />
-    <h1>The Bonus Show</h1>
-    <h2>Level up your tech, productivity, and fitness.</h2>
+        id="coverart"
+        loading="lazy" />
+    <div id="titleSection-text">
+        <h1>The Bonus Show</h1>
+        <h2>Level up your life: Fitness, Tech, &amp; Productivity.</h2>
+        <p>New episodes, every sometimes. Hosted by Luke Lechel.</p>
+    </div>
 </div>)
 
 const Home = () => (<div id="home">
