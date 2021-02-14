@@ -1,33 +1,43 @@
-#nav-container {
-    background-color: #15294e;
-    padding: 0.5rem 0 0.75rem 0;
-    justify-content: space-between;
+#nav-container * {
+    font-weight: 600;
+    color: #455464;
 }
 
-#nav-container ul {
+#desktop-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: saturate(400%) blur(20px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
-}
-#nav-container li {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: auto 3rem;
-}
-#nav-container li a {
-    color: #e6e6e6;
-}
-#nav-container li a:hover {
-    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#menuIcon {
-    margin: 0.5rem 0 0.25rem 0.5rem;
-    fill: #e6e6e6;
+#desktop-nav li {
+    font-size: 1.1rem;
+    margin: 0.5rem 2rem;
 }
-#menuIcon:hover {
-    cursor: pointer;
+#desktop-nav li a {
+    font-weight: 600;
+    margin: auto -1.25rem;
+    padding: 0.3rem 1.25rem;
 }
+#desktop-nav li:hover a {
+    background-color: #d5e8ff;
+    color: #1f84ff;
+    border-radius: 5px;
+    transition: ease-in-out;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+
+
 
 /* ---------------------- */
 /* ---------------------- */
@@ -36,20 +46,52 @@
 /* ---------------------- */
 
 @media only screen and (max-width: 768px) {
-
-    #nav-container {
-        padding: 0;
+    
+    #desktop-nav {
+        display: none;
     }
-
-    #nav-container ul {
+    #mobile-nav {
         display: block;
+        margin: 0 0 1.75rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
-    #nav-container li {
-        font-size: 1.6rem;
-        margin: 0.5rem;
+    #mobile-nav-top {
+        display: flex;
     }
-    #nav-container li:last-child {
+    #mobile-nav-top h1 {
+        font-size: 1.2rem;
+        margin: auto 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    #mobile-nav-top h1 * {
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: 95%;
+    }
+
+    #menuIcon {
+        width: 2rem;
+        height: 2rem;
+        margin: 1.5rem 1.5rem 1.5rem 1rem;
+        opacity: 0.65;
+    }
+    #menuIcon:hover {
+        cursor: pointer;
+    }
+
+    #mobile-nav-list {
+        font-size: 1.7rem;
+    }
+    #mobile-nav-list li {
+        margin: 0.5rem 0;
+    }
+    #mobile-nav-list li:last-child {
         padding-bottom: 1rem;
+    }
+    #mobile-nav-list li a {
+        font-weight: 400;
+        margin: 0 1.5rem;
     }
 
 }
