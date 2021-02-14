@@ -1,3 +1,6 @@
+#nav-container {
+    margin-bottom: 3.5rem;
+}
 #nav-container * {
     font-weight: 600;
     color: #455464;
@@ -17,17 +20,19 @@
 }
 
 #desktop-nav li {
-    font-size: 1.1rem;
-    margin: 0.5rem 2rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 0.8rem 2rem;
 }
 #desktop-nav li a {
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     margin: auto -1.25rem;
-    padding: 0.3rem 1.25rem;
+    padding: 0.6rem 1.25rem;
 }
 #desktop-nav li:hover a {
-    background-color: #d5e8ff;
-    color: #1f84ff;
+    background-image: linear-gradient(45deg,#3ca5eb, #1666cf);
+    color: white;
     border-radius: 5px;
     transition: ease-in-out;
 }
