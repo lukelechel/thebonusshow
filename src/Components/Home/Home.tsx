@@ -26,7 +26,7 @@ const Home = () => (<div id="home">
     <Nav />
     <Title />
         <div id="recentEpisodesSection">
-            <h1 id="recentEpsLabel">Recent episodes</h1>
+            <h1 id="recentEpsLabel">Recent Episodes</h1>
             {
                 epDataFetcher().slice(0).reverse().map((x, i) => {
                     let episodeId = `ep${x.id}`
@@ -42,6 +42,7 @@ const Home = () => (<div id="home">
                     )
                 })
             }
+            <div id="seeMoreEpsButton"><ActionButton emoji="🚀" text="Check out more episodes" link="/ep" /></div>
         </div>
 </div>)
 
