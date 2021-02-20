@@ -1,8 +1,8 @@
 import React from 'react'
+import './PodcastAppBar.css'
 
-const awsResourceUriPrefix = 'https://thebonusshow-resources.s3.us-east-2.amazonaws.com/'
-
-const iconLibrary = [
+const awsResourceUriPrefix = "https://lukelechelcom-resources.s3.us-east-2.amazonaws.com/podcast-app-icons/"
+const podcastAppIconLibrary = [
     {
         link: "https://podcasts.apple.com/us/podcast/the-bonus-show/id1519331671",
         platform: "Apple Podcasts",
@@ -30,21 +30,19 @@ const iconLibrary = [
     }
 ]
 
-const PodcastAppBar = () => (<ul id="podcastAppBar">
-    {
-        iconLibrary.map(x => (
-            <li key={x.platform}>
-                <a
-                    href={x.link}
-                    title={`The Bonus Show on ${x.platform}`}
-                    rel="noopener noreferrer">
-                    <img
-                        src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
-                        alt={`${x.platform} logo`} />
-                </a>
-            </li>
-        ))
-    }
+const PodcastAppBar = () => (<ul id="podcast-app-bar">
+    {podcastAppIconLibrary.map(x => (
+        <li key={x.platform}>
+            <a
+                href={x.link}
+                title={`The Bonus Show on ${x.platform}`}
+                rel="noopener noreferrer">
+                <img
+                    src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
+                    alt={`${x.platform} logo`} />
+            </a>
+        </li>
+    ))}
 </ul>)
 
 export default PodcastAppBar
