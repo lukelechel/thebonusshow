@@ -17,17 +17,20 @@ interface ShowNotesBase {
     straightUpText: string
 }
 
-function fetchEpData() {
-    return fetch(epDataEndpoint)
-        .then(response => response.json())
-        .catch(error => console.log(error))
+async function fetchEpisodeData() {
+    try {
+        const response = await fetch(epDataEndpoint)
+        return await response.json()
+    } catch (error) {
+        return console.log(error)
+    }
 }
 
 export default function EpDataFetcher() {
     const [epDataArray, setEpDataArray] = useState<EpDataBase[]>([])
 
     useEffect(() => {
-        fetchEpData().then(rawData => setEpDataArray(rawData))
+        fetchEpisodeData().then(rawData => setEpDataArray(rawData))
     }, [])
 
     return epDataArray

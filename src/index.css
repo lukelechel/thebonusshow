@@ -15,11 +15,9 @@
 
 body {
     background-color: #fafafa;
-    margin-bottom: 6rem;
 }
 
 p {
-    color: #31383f;
     font-weight: 400;
 }
 
@@ -30,7 +28,6 @@ a {
 
 a:hover {
     color: #65b0f0;
-    transition: 0.2s;
     cursor: pointer;
 }
 

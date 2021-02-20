@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import './Feedback.css'
 
-import Nav from '../Nav/Nav'
-
 function FeedbackForm() {
     // state management
     const [name, setName] = useState(String)
@@ -90,7 +88,6 @@ function FeedbackForm() {
 }
 
 const Feedback = () => (<div>
-    <Nav />
     <div id="feedback-page-info">
         <h1>Feedback</h1>
         <p>You've heard from me.</p>

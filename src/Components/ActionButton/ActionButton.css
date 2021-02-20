@@ -1,0 +1,22 @@
+#actionbutton-container {
+    display: inline-block;
+    margin: 0.75rem 0;
+}
+#actionbutton-container a {
+    color: white;
+    background-color: #1f84ff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 0.15rem 0.1rem 0.2rem #bdbdbd;
+    transition: 150ms ease-in-out;
+}
+#actionbutton-container a:hover {
+    box-shadow: 0.25rem 0.2rem 0.5rem #b8b8b8;
+    transition: 150ms ease-in-out;
+}
+#action-emoji {
+    margin-right: 0.5rem;
+}

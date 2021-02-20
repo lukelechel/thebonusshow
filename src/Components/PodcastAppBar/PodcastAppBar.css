@@ -1,6 +1,15 @@
 #podcast-app-bar {
-    display: flex;
     margin: 1rem 0;
+}
+
+#podcast-app-bar h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+#podcast-app-bar ul {
+    display: flex;
 }
 
 #podcast-app-bar li {

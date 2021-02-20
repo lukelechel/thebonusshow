@@ -1,0 +1,33 @@
+#individual-episode h1 {
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+#individual-episode h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+}
+#individual-episode h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+#individual-episode p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+
+#individual-episode #show-notes {
+    margin-top: 1.5rem;
+}
+#individual-episode #show-notes>h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+#individual-episode #show-notes li {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0.6rem 0;
+    width: fit-content;
+}

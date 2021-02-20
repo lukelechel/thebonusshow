@@ -30,19 +30,24 @@ const podcastAppIconLibrary = [
     }
 ]
 
-const PodcastAppBar = () => (<ul id="podcast-app-bar">
-    {podcastAppIconLibrary.map(x => (
-        <li key={x.platform}>
-            <a
-                href={x.link}
-                title={`The Bonus Show on ${x.platform}`}
-                rel="noopener noreferrer">
-                <img
-                    src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
-                    alt={`${x.platform} logo`} />
-            </a>
-        </li>
-    ))}
-</ul>)
+const PodcastAppBar = () => (
+    <div id="podcast-app-bar">
+        <h1>Subscribe wherever you want.</h1>
+        <ul>
+            {podcastAppIconLibrary.map(x => (
+                <li key={x.platform}>
+                    <a
+                        href={x.link}
+                        title={`The Bonus Show on ${x.platform}`}
+                        rel="noopener noreferrer">
+                        <img
+                            src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
+                            alt={`${x.platform} logo`} />
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </div>
+)
 
 export default PodcastAppBar

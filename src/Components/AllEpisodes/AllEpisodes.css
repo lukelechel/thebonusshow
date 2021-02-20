@@ -1,0 +1,23 @@
+#all-episodes>h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+#all-episodes-list li {
+    margin: 2rem 0;
+}
+#all-episodes-list li:first-child {
+    margin: 0.5rem 0 2rem 0;
+}
+#all-episodes-list li h1 * {
+    font-size: 2rem;
+    font-weight: 700;
+}
+#all-episodes-list li h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+#all-episodes-list li p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
