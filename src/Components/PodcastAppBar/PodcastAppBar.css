@@ -10,15 +10,22 @@
 
 #podcast-app-bar ul {
     display: flex;
+    flex-direction: column;
 }
 
 #podcast-app-bar li {
-    margin: 0 1rem;
+    margin: 0.25rem 0 0.6rem 0;
 }
-#podcast-app-bar li:first-child {
-    margin: 0 1rem 0 0;
+#podcast-app-bar li a {
+    display: flex;
+    width: fit-content;
 }
-
 #podcast-app-bar li img {
     width: 3rem;
+    height: 3rem;
+}
+#podcast-app-bar li p {
+    margin: auto 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
 }

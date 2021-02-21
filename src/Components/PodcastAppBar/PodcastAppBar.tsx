@@ -42,7 +42,10 @@ const PodcastAppBar = () => (
                         rel="noopener noreferrer">
                         <img
                             src={`${awsResourceUriPrefix}${x.iconFileName}.svg`}
-                            alt={`${x.platform} logo`} />
+                            alt={`${x.platform} logo`}
+                            width="3rem"
+                            height="3rem" />
+                        <p>{x.platform}</p>
                     </a>
                 </li>
             ))}
