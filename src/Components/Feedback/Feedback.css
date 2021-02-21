@@ -1,18 +1,20 @@
-#feedback-page-info {
-    text-align: center;
+#feedback-title {
     margin: 1rem 0;
+    text-align: center;
 }
-#feedback-page-info h1 {
-    line-height: 150%;
+#feedback-title>h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
 }
-#feedback-page-info p {
-    font-size: 1.2rem;
+#feedback-title p {
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
 #feedback-form {
     margin: 2rem auto;
-    text-align: center;
-    max-width: 30%;
+    max-width: 50%;
 }
 #feedback-form * {
     display: block;
@@ -21,6 +23,7 @@
 }
 #feedback-form input, #feedback-form textarea {
     font-size: 1.1rem;
+    font-weight: 400;
     border-radius: 5px;
     padding: 0.2rem 0.4rem 0.25rem 0.4rem;
     text-align: center;
@@ -36,7 +39,7 @@
 #feedback-form input[type=button] {
     cursor: pointer;
     color: white;
-    background-color: #15294e;
+    background-image: linear-gradient(45deg, #1666cf, #3f21e9, #7e21e9);
     border: none;
     padding-top: 0.225rem;
     padding-bottom: 0.27rem;
@@ -44,8 +47,9 @@
     -webkit-appearance: none;
 }
 #feedback-form input[type=button]:hover {
-    background-color: #01ab48;
-    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(45deg, #01ab48, #01ab26);
+    /* background-color: #01ab48; */
+    transition: 0.2s ease-in-out;
 }
 
 #loadingSpinner {

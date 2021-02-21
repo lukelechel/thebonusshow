@@ -84,15 +84,17 @@ function FeedbackForm() {
         {
             formSubmitted ? returnDone() : null
         }
-</form>)
+    </form>)
 }
 
+const FeedbackTitle = () => (<div id="feedback-title">
+    <h1>Feedback</h1>
+    <p>You've heard from me.</p>
+    <p>This is my turn to hear from you.</p>
+</div>)
+
 const Feedback = () => (<div>
-    <div id="feedback-page-info">
-        <h1>Feedback</h1>
-        <p>You've heard from me.</p>
-        <p>This is my turn to hear from you.</p>
-    </div>
+    <FeedbackTitle />
     <FeedbackForm />
 </div>)
 
