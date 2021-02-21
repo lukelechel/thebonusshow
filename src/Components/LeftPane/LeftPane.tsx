@@ -9,6 +9,8 @@ const LeftPane = () => (<div id="left-pane">
     <p>New episodes, every sometimes.</p>
     <p>Hosted by Luke Lechel.</p>
     <PodcastAppBar />
+    <p><a href="/feedback">Feedback</a></p>
+    <p><a href="/ksejogjqugq">Error</a></p>
 </div>)
 
 export default LeftPane

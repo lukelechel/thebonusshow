@@ -1,12 +1,12 @@
 import React from 'react'
 import './IndividualEpisode.css'
-import epDataFetcher from '../EpDataFetcher/EpDataFetcher'
+import EpDataFetcher from '../EpDataFetcher/EpDataFetcher'
 import { useParams } from 'react-router-dom'
 import ActionButton from '../ActionButton/ActionButton'
 
-export default function IndividualEpisode() {
+const IndividualEpisode = () => {
     const { id } = useParams()
-    const thisEpisodeInfo = epDataFetcher().find(x => x.id === id)
+    const thisEpisodeInfo = EpDataFetcher().find(x => x.id === id)
     return (<div id="individual-episode">
         {
             thisEpisodeInfo ? (
@@ -33,3 +33,5 @@ export default function IndividualEpisode() {
         }
     </div>)
 }
+
+export default IndividualEpisode
