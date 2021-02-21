@@ -20,3 +20,24 @@
 #action-emoji {
     margin-right: 0.5rem;
 }
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    #actionbutton-container {
+        display: inline-block;
+        margin: 1rem 0;
+    }
+    #actionbutton-container a {
+        font-size: 1.25rem;
+        font-weight: 600;
+        padding: 0.6rem 1.25rem;
+        border-radius: 10px;
+    }
+
+}

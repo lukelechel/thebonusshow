@@ -11,7 +11,7 @@ const AllEpisodes = () => (<div id="all-episodes">
             <h1><Link to={`/${x.id}`}>{x.id}: {x.title}</Link></h1>
             <h2>{x.publishDate}</h2>
             <p>{x.description}</p>
-            <ActionButton emoji="⚡️" text={`Stream episode ${x.id}`} link={x.listenLink} />
+            <ActionButton emoji="⚡️" text={`Stream Episode ${x.id}`} link={x.listenLink} />
         </li>)})}
     </ul>
 </div>)

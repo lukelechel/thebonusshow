@@ -32,7 +32,7 @@ const podcastAppIconLibrary = [
 
 const PodcastAppBar = () => (
     <div id="podcast-app-bar">
-        <h1>Subscribe wherever you want.</h1>
+        <h1 className="desktopOnly">Subscribe wherever you want.</h1>
         <ul>
             {podcastAppIconLibrary.map(x => (
                 <li key={x.platform}>

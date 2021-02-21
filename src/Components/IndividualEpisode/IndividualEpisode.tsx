@@ -15,7 +15,7 @@ const IndividualEpisode = () => {
                     <h2>{thisEpisodeInfo.title}</h2>
                     <h3>{thisEpisodeInfo.publishDate}</h3>
                     <p>{thisEpisodeInfo.description}</p>
-                    <ActionButton emoji="⚡️" text={`Stream episode ${thisEpisodeInfo.id}`} link={thisEpisodeInfo.listenLink} />
+                    <ActionButton emoji="⚡️" text={`Stream Episode ${thisEpisodeInfo.id}`} link={thisEpisodeInfo.listenLink} />
                 
                     <div id="show-notes">
                         <h1>Show Notes</h1>

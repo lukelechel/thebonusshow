@@ -41,6 +41,7 @@
     #podcast-app-bar ul {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     #podcast-app-bar li {

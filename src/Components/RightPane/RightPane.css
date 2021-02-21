@@ -16,6 +16,7 @@
 
     #right-pane {
         width: 100%;
+        min-height: unset;
         padding: 1rem;
         left: 0;
     }
