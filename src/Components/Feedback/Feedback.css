@@ -48,7 +48,6 @@
 }
 #feedback-form input[type=button]:hover {
     background-image: linear-gradient(45deg, #01ab48, #01ab26);
-    /* background-color: #01ab48; */
     transition: 0.2s ease-in-out;
 }
 
@@ -95,7 +94,7 @@
 @media only screen and (max-width: 768px) {
 
     #feedback-form {
-        max-width: 90%;
+        max-width: 100%;
     }
     #feedback-form input {
         font-size: 1.2rem;

@@ -45,7 +45,7 @@ const PodcastAppBar = () => (
                             alt={`${x.platform} logo`}
                             width="3rem"
                             height="3rem" />
-                        <p>{x.platform}</p>
+                        <p className="desktopOnly">{x.platform}</p>
                     </a>
                 </li>
             ))}

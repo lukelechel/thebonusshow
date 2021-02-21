@@ -5,3 +5,19 @@
     position: relative;
     left: 45%;
 }
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+
+    #right-pane {
+        width: 100%;
+        padding: 1rem;
+        left: 0;
+    }
+
+}

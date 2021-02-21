@@ -1,4 +1,19 @@
 #home {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+
+    #home {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

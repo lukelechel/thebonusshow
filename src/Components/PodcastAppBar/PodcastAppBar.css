@@ -29,3 +29,22 @@
     font-size: 1.3rem;
     font-weight: 500;
 }
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 899px) {
+
+    #podcast-app-bar ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #podcast-app-bar li {
+        margin: 0 1rem;
+    }
+
+}
