@@ -11,7 +11,7 @@ const LeftPane = () => (<div id="left-pane">
     <p>New episodes, every sometimes.</p>
     <p>Hosted by Luke Lechel.</p>
     <PodcastAppBar />
-    <p><Link to="/feedback">📬 Send in feedback for the show.</Link></p>
+    <p><Link to="/feedback">📬 Submit feedback for the show.</Link></p>
 </div>)
 
 export default LeftPane

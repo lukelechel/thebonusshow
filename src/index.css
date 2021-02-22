@@ -25,9 +25,8 @@ a {
     color: #0070c9;
     text-decoration: none;
 }
-
 a:hover {
-    color: #65b0f0;
+    color: #3490ff;
     cursor: pointer;
 }
 
@@ -90,4 +89,31 @@ ul {
         display: none;
     }
 
+}
+
+
+
+/* ---------------------- */
+/* ---------------------- */
+/* ----- DARK MODE ------ */
+/* ---------------------- */
+/* ---------------------- */
+
+@media (prefers-color-scheme: dark) {
+
+    * {
+        color:rgb(231, 231, 231);
+    }
+
+    body {
+        background-color: rgb(7, 43, 77);
+    }
+
+    a {
+        color: #e29127;
+    }
+    a:hover {
+        color: #ebcb3c;
+    }
+    
 }

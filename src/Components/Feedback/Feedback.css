@@ -101,3 +101,19 @@
     }
     
 }
+
+/* ---------------------- */
+/* ---------------------- */
+/* ----- DARK MODE ------ */
+/* ---------------------- */
+/* ---------------------- */
+
+@media (prefers-color-scheme: dark) {
+
+    #feedback-form input, #feedback-form textarea {
+        color: black;
+        font-weight: 500;
+        background-color: rgb(231, 231, 231);
+    }
+    
+}
