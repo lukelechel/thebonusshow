@@ -17,6 +17,8 @@ const App = () => (<BrowserRouter>
             <Route path="/" component={Home} exact/>
             <Route path="/:id" component={EpisodePage} />
             <Route path="/feedback" component={Feedback} exact/>
+
+            <Route path="/ep/:id" component={EpisodePage} /> {/* This should be turned into a redirect. */}
         </RightPane>
     </Switch>
 </BrowserRouter>)
