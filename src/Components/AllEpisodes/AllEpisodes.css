@@ -1,6 +1,6 @@
 #all-episodes>h1 {
     font-size: 2.25rem;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 #all-episodes-list li {
@@ -11,11 +11,12 @@
 }
 #all-episodes-list li h1 * {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 800;
 }
 #all-episodes-list li h2 {
     font-size: 1.4rem;
-    font-weight: 800;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 #all-episodes-list li p {
     font-size: 1.4rem;

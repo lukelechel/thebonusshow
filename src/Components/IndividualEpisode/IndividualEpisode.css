@@ -1,11 +1,21 @@
 #individual-episode h1 {
     font-size: 2.25rem;
     font-weight: 900;
+
+    background-image: linear-gradient(90deg, #1666cf, #3ca5eb);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: fit-content;
 }
 #individual-episode h2 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 0.3rem;
+
+    background-image: linear-gradient(90deg, #e29127, #ebcb3c);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: fit-content;
 }
 #individual-episode h3 {
     font-size: 1.3rem;
@@ -24,6 +34,11 @@
 #individual-episode #show-notes>h1 {
     font-size: 2rem;
     font-weight: 700;
+
+    background-image: linear-gradient(90deg, #e29127, #ebcb3c);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: fit-content;
 }
 #individual-episode #show-notes li {
     font-size: 1.4rem;

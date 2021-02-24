@@ -102,18 +102,11 @@ ul {
 @media (prefers-color-scheme: dark) {
 
     * {
-        color:rgb(231, 231, 231);
+        color:rgb(214, 214, 214);
     }
 
     body {
-        background-color: rgb(7, 43, 77);
-    }
-
-    a {
-        color: #e29127;
-    }
-    a:hover {
-        color: #ebcb3c;
+        background-color: black;
     }
     
 }

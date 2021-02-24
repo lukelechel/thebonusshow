@@ -1,6 +1,6 @@
 import React from 'react'
 import './LeftPane.css'
-import { Link } from 'react-router-dom'
+import ActionButton from '../ActionButton/ActionButton'
 
 import PodcastAppBar from '../PodcastAppBar/PodcastAppBar'
 
@@ -11,7 +11,7 @@ const LeftPane = () => (<div id="left-pane">
     <p>New episodes, every sometimes.</p>
     <p>Hosted by Luke Lechel.</p>
     <PodcastAppBar />
-    <p><Link to="/feedback">📬 Submit feedback for the show.</Link></p>
+    <ActionButton emoji="📬" text="Submit feedback for the show." link="./feedback" />
 </div>)
 
 export default LeftPane
