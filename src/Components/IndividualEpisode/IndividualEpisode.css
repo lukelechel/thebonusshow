@@ -46,3 +46,17 @@
     margin: 0.6rem 0;
     width: fit-content;
 }
+
+/* ---------------------- */
+/* ---------------------- */
+/* ---- MOBILE ONLY ----- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    #individual-episode {
+        margin: 0 0 3rem 0;
+    }
+
+}

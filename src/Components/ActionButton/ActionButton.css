@@ -1,20 +1,20 @@
 #actionbutton-container {
     display: inline-block;
     margin: 0.75rem 0;
+    padding: 0.5rem 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0.15rem 0.1rem 0.2rem #bdbdbd;
+
+    background-image: linear-gradient(45deg,#3ca5eb, #1666cf);
+    width: fit-content;
 }
 #actionbutton-container a {
     color: white;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1px;
-    padding: 0.5rem 1.25rem;
-    border-radius: 10px;
     text-transform: uppercase;
-    box-shadow: 0.15rem 0.1rem 0.2rem #bdbdbd;
     transition: 150ms ease-in-out;
-
-    background-image: linear-gradient(45deg,#3ca5eb, #1666cf);
-    width: fit-content;
 }
 #actionbutton-container a:hover {
     box-shadow: 0.25rem 0.2rem 0.5rem #b8b8b8;
@@ -53,9 +53,13 @@
 
 @media (prefers-color-scheme: dark) {
 
-    #actionbutton-container a, #actionbutton-container a:hover {
-        box-shadow: none;
+    #actionbutton-container {
         background-image: linear-gradient(45deg, #1666cf, #3f21e9, #7e21e9);
+        box-shadow: none;
+    }
+
+    #actionbutton-container a:hover {
+        box-shadow: none;
     }
     
 }
