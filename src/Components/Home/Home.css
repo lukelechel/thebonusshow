@@ -1,19 +1,13 @@
-#home {
-    display: flex;
-    flex-direction: row;
+#home>h1 {
+    font-size: 5rem;
+    font-weight: 800;
 }
 
-/* ---------------------- */
-/* ---------------------- */
-/* ---- MOBILE ONLY ----- */
-/* ---------------------- */
-/* ---------------------- */
-
-@media only screen and (max-width: 899px) {
-
-    #home {
-        display: flex;
-        flex-direction: column;
-    }
-
+#home>h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 120%;
+    word-spacing: 1px;
+    width: 70%;
+    margin-bottom: 1rem;
 }

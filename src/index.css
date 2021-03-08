@@ -1,77 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
-@font-face {
-    font-family: 'Gotham Bold';
-    src: url('../src/Gotham_Bold.otf');
-    font-display: swap;
-}
-
 * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 600;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #fafafa;
-}
-
-p {
-    font-weight: 400;
+    margin: 8rem 10% 10rem 10%;
 }
 
 a {
-    color: #0070c9;
+    color: unset;
     text-decoration: none;
 }
-a:hover {
-    color: #3490ff;
-    cursor: pointer;
-}
 
-ul {
-    list-style: none;
-    margin: 0;
-    border: 0;
-}
-
-.visible {
-    display: unset;
-}
 .invisible {
     display: none;
 }
-
-/* ---------------------- */
-/* ---------------------- */
-/* ---- DESKTOP ONLY ---- */
-/* ---------------------- */
-/* ---------------------- */
-
-@media only screen and (min-width: 1300px) {
-
-    .mobileOnly {
-        display: none;
-    }
-
+.visible {
+    display: block;
 }
-
-/* ---------------------- */
-/* ---------------------- */
-/* ---- TABLET ONLY ----- */
-/* ---------------------- */
-/* ---------------------- */
-
-@media only screen and (min-width: 769px) and (max-width: 1299px) {
-
-    .mobileOnly {
-        display: none;
-    }
-
-}
-
-
 
 /* ---------------------- */
 /* ---------------------- */
@@ -81,28 +29,21 @@ ul {
 
 @media only screen and (max-width: 768px) {
 
-    .desktopOnly {
-        display: none;
-    }
-
-}
-
-
-
-/* ---------------------- */
-/* ---------------------- */
-/* ----- DARK MODE ------ */
-/* ---------------------- */
-/* ---------------------- */
-
-@media (prefers-color-scheme: dark) {
-
-    * {
-        color:rgb(214, 214, 214);
-    }
-
     body {
-        background-color: black;
+        margin: 1rem 3% 5rem 3%;
     }
-    
+
 }
+
+
+
+
+
+
+
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(41, 48, 56);
+        color: white;
+    }
+} */
