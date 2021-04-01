@@ -1,13 +1,7 @@
-#home>h1 {
-    font-size: 5rem;
-    font-weight: 800;
+#title {
+    margin-bottom: 3rem;
 }
 
-#home>h2 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 120%;
-    word-spacing: 1px;
-    width: 70%;
-    margin-bottom: 1rem;
+#title h1 {
+    font-size: 4rem;
 }

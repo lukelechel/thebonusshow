@@ -1,18 +1,32 @@
-import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import './tsSupport-react-router-dom.d.ts'
 import './App.css'
 
 import Home from '../Home/Home'
-import IndividualEpisode from '../IndividualEpisode/IndividualEpisode'
 
-const App = () => (<BrowserRouter>
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
+
+interface HelmetTitleBase {
+    name: string,
+    component?: any
+}
+
+const HelmetTitle = ({ name, component }:HelmetTitleBase) => {
+    return (<HelmetProvider>
+        <Helmet>
+            <title>The Bonus Show - {name}</title>
+        </Helmet>
+        {component}
+    </HelmetProvider>)
+}
+
+const App = () => {
+  return (<BrowserRouter>
     <Switch>
-        <Route path="/" component={Home} exact/>
-        <Route path="/:id" component={IndividualEpisode} />
-
-        <Route path="/ep/:id" component={IndividualEpisode} /> {/*This should be turned into a redirect.*/}
+        <Route exact path="/">
+            <HelmetTitle name="Home" component={<Home />} />
+        </Route>
     </Switch>
 </BrowserRouter>)
+}
 
 export default App

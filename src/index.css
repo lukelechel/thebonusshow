@@ -4,14 +4,66 @@
     padding: 0;
     box-sizing: border-box;
 }
+.monospace, .monospace * {
+    font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
 
 body {
-    margin: 8rem 10% 10rem 10%;
+    max-width: 70%;
+    padding: 0 5%;
+    margin: 8rem auto;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
 a {
-    color: unset;
+    color: black;
     text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 1rem;
+}
+p>a {
+    color: rgb(42, 118, 219);
+    font-weight: 600;
+}
+p>a:hover {
+    color: rgb(112, 156, 214);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section {
+    margin-bottom: 3.5rem;
+}
+
+.desktopOnly {
+    display: block;
+}
+.mobileOnly {
+    display: none;
 }
 
 .invisible {
@@ -23,27 +75,49 @@ a {
 
 /* ---------------------- */
 /* ---------------------- */
-/* ---- MOBILE ONLY ----- */
+/* - TABLET AND MOBILE -- */
 /* ---------------------- */
 /* ---------------------- */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1299px) {
 
     body {
-        margin: 1rem 3% 5rem 3%;
+        max-width: 100%;
+        padding: 0 3%;
+        margin: 4rem auto;
+    }
+
+    .mobileOnly {
+        display: block;
+    }
+    .desktopOnly {
+        display: none;
     }
 
 }
 
+/* ---------------------- */
+/* ---------------------- */
+/* ----- DARK MODE  ----- */
+/* ---------------------- */
+/* ---------------------- */
 
+@media (prefers-color-scheme: dark) {
 
-
-
-
-
-/* @media (prefers-color-scheme: dark) {
     body {
-        background-color: rgb(41, 48, 56);
+        color: white;
+        background-color: rgb(13, 13, 13);
+    }
+
+    a {
         color: white;
     }
-} */
+
+    p>a {
+        color: rgb(255, 56, 82);
+    }
+    p>a:hover {
+        color: rgb(255, 94, 115);
+    }
+
+}
