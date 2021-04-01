@@ -11,10 +11,11 @@ interface EpisodeCardBase {
 
 const EpisodeCard = ({id, title, description, pubDate, listenUrl}:EpisodeCardBase) => (<div id="episode-card" className="monospace">
     <h1>{id}: {title}</h1>
-    <h2><span id="pubDate">{pubDate}</span> {description}</h2>
+    <h2>{description}</h2>
     <ul>
-        <li><Link to={`/${id}`}>Show Notes</Link></li>
-        <li><a href={listenUrl}>Listen</a></li>
+        <li>{pubDate}</li>
+        <li><Link to={`/${id}`}>📝 Show Notes</Link></li>
+        <li><a href={listenUrl}>👂 Listen Now</a></li>
     </ul>
 </div>)
 

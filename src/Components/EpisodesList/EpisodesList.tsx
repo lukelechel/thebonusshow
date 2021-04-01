@@ -34,7 +34,7 @@ const EpisodesList = () => {
 
     return (<div id="episodes-list">
         {
-            epDataArray.slice(0).reverse().map(x => <EpisodeCard id={x.id} title={x.title} description={x.description} pubDate={x.publishDate} listenUrl={x.listenLink} />)
+            epDataArray.slice(0).reverse().map((x, i) => <EpisodeCard key={i} id={x.id} title={x.title} description={x.description} pubDate={x.publishDate} listenUrl={x.listenLink} />)
         }
     </div>)
 }

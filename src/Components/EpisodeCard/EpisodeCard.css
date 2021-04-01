@@ -1,8 +1,5 @@
 #episode-card {
-    /* padding: 2.5rem;
-    border: 1px solid rgb(56, 165, 255);
-    border-radius: 5px; */
-    margin: 5rem 0;
+    margin: 5rem auto;
 }
 
 #episode-card h1 {
@@ -18,20 +15,34 @@
     margin-bottom: 0.8rem;
 }
 
-#episode-card h2 #pubDate {
-    font-weight: 800;
-}
-
 #episode-card ul {
     display: flex;
 }
 #episode-card li {
     font-size: 1.1rem;
-    margin-right: 1.5rem;
+    margin: auto 2rem auto 0;
 }
 #episode-card li * {
     color: rgb(56, 165, 255);
+    font-weight: 600;
 }
 #episode-card li *:hover {
     color: rgb(106, 188, 255);
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* - TABLET AND MOBILE -- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 1299px) {
+
+    #episode-card ul {
+        display: block;
+    }
+    #episode-card li {
+        margin: 0.5rem auto;
+    }
+
 }
