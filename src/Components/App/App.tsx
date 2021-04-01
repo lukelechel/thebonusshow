@@ -1,6 +1,7 @@
 import './App.css'
 
 import Home from '../Home/Home'
+import EpisodePage from '../EpisodePage/EpisodePage'
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
@@ -25,6 +26,7 @@ const App = () => {
         <Route exact path="/">
             <HelmetTitle name="Home" component={<Home />} />
         </Route>
+        <Route path="/:id" component={EpisodePage} />
     </Switch>
 </BrowserRouter>)
 }
