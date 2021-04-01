@@ -64,7 +64,7 @@ const Home = () => {
             rawData.slice(0).reverse().map((x:EpDataBase) => {
                 return setEpList((epList) => [...epList, {
                     title: `${x.id}: ${x.title}`,
-                    link: x.listenLink,
+                    link: `/${x.id}`,
                     rightArrow: true,
                     subtitle: x.description
                 }])
