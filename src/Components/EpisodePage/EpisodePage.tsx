@@ -44,9 +44,9 @@ const EpisodePage = () => {
 
     useEffect(() => {
         fetchEpData().then(rawData => {
-            setThisEpData(rawData.find((x:any) => x.id === id))
+            setThisEpData(rawData.find((x:EpDataBase) => x.id === id))
         })
-    }, [])
+    }, [id])
 
     return (<div id="episode-page">
         <h1>{id}: {thisEpData.title}</h1>
