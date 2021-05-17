@@ -1,5 +1,6 @@
 #episode-card {
     margin: 5rem auto;
+    width: 60%;
 }
 
 #episode-card h1 {
@@ -37,6 +38,11 @@
 /* ---------------------- */
 
 @media only screen and (max-width: 1299px) {
+
+    #episode-card {
+        margin: 5rem auto;
+        width: 100%;
+    }
 
     #episode-card ul {
         display: block;

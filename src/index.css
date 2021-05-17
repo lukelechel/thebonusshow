@@ -9,9 +9,8 @@
 }
 
 body {
-    max-width: 70%;
     padding: 0 5%;
-    margin: 8rem auto;
+    margin: 2rem auto 8rem auto;
 }
 
 
@@ -84,7 +83,7 @@ img {
     body {
         max-width: 100%;
         padding: 0 3%;
-        margin: 4rem auto;
+        margin: 2rem auto;
     }
 
     .mobileOnly {
