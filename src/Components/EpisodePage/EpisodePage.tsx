@@ -28,7 +28,19 @@ function fetchEpData() {
 const EpisodePage = () => {
     const { id } = useParams<{ id: string }>()
 
-    const [thisEpData, setThisEpData] = useState()
+    const [thisEpData, setThisEpData] = useState({
+        id: "",
+        title: "",
+        publishDate: "",
+        description: "",
+        listenLink: "",
+        showNotes: {
+            isLink: false,
+            title: "",
+            link: "",
+            straightUpText: ""
+        }
+    });
 
     useEffect(() => {
         fetchEpData().then(rawData => {
