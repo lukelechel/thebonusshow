@@ -1,5 +1,5 @@
 # thebonusshow
 
-This is the code for The Bonus Show podcast.
+This is the code for my podcast, [The Bonus Show](https://thebonusshow.com).
 
-Built on React Native and React Router.
+Built on ReactJS using TypeScript.
