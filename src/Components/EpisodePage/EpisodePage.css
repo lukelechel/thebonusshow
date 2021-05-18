@@ -34,4 +34,45 @@
 #show-notes li {
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    line-height: 140%;
+}
+#show-notes li a {
+    text-decoration: underline;
+    color: rgb(56, 165, 255);
+    font-weight: 600;
+}
+#show-notes li a:hover {
+    opacity: 0.9;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* - TABLET AND MOBILE -- */
+/* ---------------------- */
+/* ---------------------- */
+
+@media only screen and (max-width: 1299px) {
+
+    #episode-page {
+        max-width: 100%;
+        margin: 0 auto 3rem auto;
+    }
+
+    #episode-title-info h1 {
+        margin-bottom: 0.5rem;
+    }
+    #episode-title-info h3 {
+        font-size: 1.4rem;
+        line-height: 150%;
+    }
+    #episode-title-info>div {
+        display: flex;
+        justify-content: space-around;
+    }
+    #episode-title-info h4 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 1rem 0 1rem 0;
+    }
+
 }

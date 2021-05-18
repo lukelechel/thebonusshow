@@ -28,7 +28,7 @@
     font-weight: 600;
 }
 #episode-card li *:hover {
-    color: rgb(106, 188, 255);
+    opacity: 0.9;
 }
 
 /* ---------------------- */
