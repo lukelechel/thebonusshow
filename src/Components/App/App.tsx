@@ -1,6 +1,7 @@
 import './App.css'
 
 import Home from '../Home/Home'
+import Nav from '../Nav/Nav'
 import EpisodePage from '../EpisodePage/EpisodePage'
 import Error from '../Error/Error'
 
@@ -25,10 +26,15 @@ const App = () => {
   return (<BrowserRouter>
     <Switch>
         <Route exact path="/">
+            <Nav />
             <HelmetTitle name="Home" component={<Home />} />
         </Route>
-        <Route path="/ep/:id" component={EpisodePage} />
+        <Route path="/ep/:id">
+            <Nav />
+            <HelmetTitle name="Episode :id" component={<EpisodePage />} />
+        </Route>
         <Route>
+            <Nav />
             <HelmetTitle name="404: Page not found" component={<Error />} />
         </Route>
     </Switch>
