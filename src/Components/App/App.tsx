@@ -2,6 +2,7 @@ import './App.css'
 
 import Home from '../Home/Home'
 import EpisodePage from '../EpisodePage/EpisodePage'
+import Error from '../Error/Error'
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
@@ -26,7 +27,10 @@ const App = () => {
         <Route exact path="/">
             <HelmetTitle name="Home" component={<Home />} />
         </Route>
-        <Route path="/:id" component={EpisodePage} />
+        <Route path="/ep/:id" component={EpisodePage} />
+        <Route>
+            <HelmetTitle name="404: Page not found" component={<Error />} />
+        </Route>
     </Switch>
 </BrowserRouter>)
 }

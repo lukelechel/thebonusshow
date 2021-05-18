@@ -14,7 +14,7 @@ const EpisodeCard = ({id, title, description, pubDate, listenUrl}:EpisodeCardBas
     <h2>{description}</h2>
     <ul>
         <li>{pubDate}</li>
-        <li><Link to={`/${id}`}>📝 Show Notes</Link></li>
+        <li><Link to={`/ep/${id}`}>📝 Show Notes</Link></li>
         <li><a href={listenUrl}>👂 Listen Now</a></li>
     </ul>
 </div>)

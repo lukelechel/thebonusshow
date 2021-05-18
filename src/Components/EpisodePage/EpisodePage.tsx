@@ -34,12 +34,12 @@ const EpisodePage = () => {
         publishDate: "",
         description: "",
         listenLink: "",
-        showNotes: {
+        showNotes: [{
             isLink: false,
             title: "",
             link: "",
             straightUpText: ""
-        }
+        }]
     });
 
     useEffect(() => {
@@ -49,7 +49,25 @@ const EpisodePage = () => {
     }, [id])
 
     return (<div id="episode-page">
-        <h1>{id}: {thisEpData.title}</h1>
+        <div id="episode-title-info">
+            <h1>Episode {id}</h1>
+            <h2>{thisEpData.title}</h2>
+            <h3 className="monospace">{thisEpData.description}</h3>
+            <div className="monospace">
+                <h4>{thisEpData.publishDate}</h4>
+                <h4><a href={thisEpData.listenLink}>👂 Listen Now</a></h4>
+            </div>
+        </div>
+        
+
+        <ul id="show-notes" className="monospace">
+            {thisEpData.showNotes.map((x, i) => (<li key={i}>
+                {x.isLink ? (<a href={x.link} key={i}>
+                    {x.title}
+                </a>) :
+                (x.straightUpText)}
+            </li>))}
+        </ul>
     </div>)
 }
 
