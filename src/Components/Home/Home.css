@@ -16,6 +16,7 @@
 @media only screen and (max-width: 1299px) {
 
     #title {
+        text-align: center;
         max-width: 100%;
         margin: 0 auto 3rem auto;
     }

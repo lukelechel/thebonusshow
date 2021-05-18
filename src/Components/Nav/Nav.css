@@ -56,10 +56,7 @@
 /* ---------------------- */
 
 @media only screen and (max-width: 768px) {
-    
-    #desktop-nav {
-        display: none;
-    }
+
     #mobile-nav {
         display: block;
         margin: 0 0 1rem 0;
