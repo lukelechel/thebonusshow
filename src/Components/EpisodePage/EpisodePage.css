@@ -9,6 +9,7 @@
 #episode-title-info h1 {
     font-size: 2.4rem;
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 #episode-title-info h2 {
     font-size: 2.2rem;
@@ -20,6 +21,7 @@
     font-weight: 400;
     font-weight: 700;
     margin-bottom: 1rem;
+    line-height: 150%;
 }
 #episode-title-info>div {
     display: flex;
@@ -29,6 +31,10 @@
     font-weight: 500;
     line-height: 100%;
     margin-right: 3rem;
+}
+#episode-title-info h4 a {
+    color: rgb(56, 165, 255);
+    font-weight: 600;
 }
 
 #show-notes li {
@@ -66,13 +72,13 @@
         line-height: 150%;
     }
     #episode-title-info>div {
-        display: flex;
-        justify-content: space-around;
+        display: block;
+        text-align: center;
     }
     #episode-title-info h4 {
         font-size: 1.4rem;
         font-weight: 600;
-        margin: 1rem 0 1rem 0;
+        margin: 1.5rem auto;
     }
 
 }
